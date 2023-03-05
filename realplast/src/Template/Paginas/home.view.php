@@ -6,16 +6,16 @@
                 <div class="swiper mySwiper-banner">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="col-lg-5 col-12 px-2 banner-conteudo">
-                                <div class="d-flex justify-content-center align-items-center">
+                            <div class="col-lg-5 col-12 px-2 banner-conteudo ms-2">
+                                <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
                                     <h2>A beleza do plástico</h2>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
                                     <p>Conheça nossa linha de produtos de qualidade inigualável</p>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
                                     <button class="btn btn-custom2">Saiba mais
-                                    <svg width="20"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                          <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
                                     </svg>
                                     </button>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="d-flex justify-content-start align-items-center">
                     <button class="btn btn-custom2">Linha completa
-                    <svg width="20"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
                     </svg>
                     </button>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="d-flex justify-content-start align-items-center">
                     <button class="btn btn-custom2">Linha completa
-                    <svg width="20"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 9L5 5L1 1" stroke="#253E4F" stroke-width="2"/>
                     </svg>
                     </button>
@@ -176,7 +176,7 @@
                                 </div>
                                 <div class="d-flex justify-content-center">
                                     <a href="">Ver mais 
-                                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                          <path d="M1 13L7 7L1 1" stroke="#FF3C01" stroke-width="1.5"/>
                                     </svg>
                                     </a>
@@ -206,10 +206,11 @@
                     </div>
                     <div class="d-flex justify-content-start align-items-center">
                         <button class="btn btn-custom2">Linha completa
-                        <svg width="20"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 9L5 5L1 1" stroke="#253E4F" stroke-width="2"/>
                         </svg>
                         </button>
+                        
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center align-items-center">
@@ -229,8 +230,8 @@
                         <p>Adquira produtos perfeitos para a sua necessidade</p>
                     </div>
                     <div class="d-flex justify-content-start align-items-center">
-                        <button class="btn btn-custom2">Linha completa
-                        <svg width="20"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn btn-custom2" data-bs-toggle="modal" data-bs-target="#exampleModal">Personalize produtos
+                        <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
                         </svg>
                         </button>
@@ -240,5 +241,101 @@
                     
                 </div>
             </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Orçamento</h2>
+                        <div class="flex-column inputs">
+                            <input type="text" class="form-control" placeholder="Nome completo *">
+                            <input type="text" class="form-control" placeholder="E-mail *">
+                            <input type="text" class="form-control" placeholder="Telefone">
+                            <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        </div>
+                        <div class="modal-body2">
+                            <div class="d-flex personalizar">
+                                <h2>Quer personalizar seu produto?</h2>
+                                    <label class="switch mt-1 ms-1">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                            </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                            <div class="textarea-wrapper">
+                                                <textarea  maxlength="100" class="form-control" id="myTextarea" name="" placeholder="Frase desejada"
+                                                cols="30" rows="10"></textarea>
+                                            <div id="charCount"></div>
+                                        </div>
+                                        <div class="input-group mt-1">
+                                            <span class="input-group-text" id="basic-addon1">Cor Desejada</span>
+                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                        <option value="1">Opção 1</option>
+                                                        <option value="2">Opção 2</option>
+                                                        <option value="3">
+                                                        <img src="<?= asset('/images/icones/bolinha.png') ?>" alt="">    
+                                                        Opção 3</option>
+                                                        <option value="4">Opção 4</option>
+                                                    </select>  
+                                            </div>
+                                        </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="custom-file-input">
+                                            <label for="file-input"></label>
+                                            <input type="file" id="file-input" name="file">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 poltica-privacidade">
+                                        <div class="d-flex">
+                                        <input type="checkbox" class="me-1">
+
+                                            <h6>Li e aceito os termos da <span>Política de Privacidade</span> da RealPlast</h6>
+                                        </div>
+                                        <button class="btn btn-custom2">Enviar</button>
+                                    </div>
+                                </div>
+                        </div>  
+                    </div>
+                    <!--<div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>-->
+                    </div>
+                </div>
+                </div>
     </section>
 </main>
+
+<script>
+const textarea = document.getElementById("myTextarea");
+const charCount = document.getElementById("charCount");
+
+function countChars() {
+  charCount.innerHTML = `${textarea.value.length}/${textarea.maxLength}`;
+}
+
+countChars();
+
+textarea.addEventListener("input", () => {
+  countChars();
+});
+
+window.addEventListener("resize", () => {
+  positionCharCount();
+});
+
+window.addEventListener("load", () => {
+  positionCharCount();
+});
+
+function positionCharCount() {
+  const textareaRect = textarea.getBoundingClientRect();
+  charCount.style.left = `${textareaRect.right - charCount.offsetWidth}px`;
+  charCount.style.top = `${textareaRect.bottom - charCount.offsetHeight}px`;
+}
+</script>

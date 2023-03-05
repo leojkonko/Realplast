@@ -60,13 +60,13 @@
                 <div class="col-lg-5 col-md-1 col-1 d-flex align-items-center mt-1">
                     <ul class="d-flex menu">
                         <li>
-                            <a href="<?= url('/') ?>">Home</a>
+                            <a class="active home" href="<?= url('/') ?>">Home</a>
                         </li>
                         <li>
-                            <a href="<?= url('empresa') ?>">Sobre nós</a>
+                            <a class="sobre-nos" href="<?= url('empresa') ?>">Sobre nós</a>
                         </li>
-                        <li type="button" class="d-flex" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-                            <a href="">Produtos</a>
+                        <li type="button" class="d-flex drop" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                            <a class="produto" href="">Produtos</a>
                             <svg class="text-custom2 seta ms-0-25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flecha w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
@@ -79,8 +79,8 @@
                         <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flecha w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>-->
-                        <li>
-                            <a href="<?= url('contato') ?>">Contato</a>
+                        <li class="contato-li">
+                            <a class="contato" href="<?= url('contato') ?>">Contato</a>
                         </li>
                     </ul>
                 </div> 
@@ -105,7 +105,7 @@
         <!--offcanvas-->
         <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
             <div class="offcanvas-header">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><span>X</span></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><span></span></button>
             </div>
             <div class="offcanvas-body">
                 <div class="row">
@@ -116,7 +116,7 @@
                         <li>
                             <a href="">Sobre nós</a>
                         </li>
-                        <li  class="links">
+                        <!--<li  class="links">
                             <a href="">Produtos</a>
                         </li>
                         <li class="buttons">
@@ -129,6 +129,32 @@
                            <div>
                                  <button class="btn btn-custom disabled">Escolar - Em breve</button>
                            </div>
+                        </li>-->
+                        <li>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Produtos
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                        <?php foreach(range(0,4) as $i) : ?>
+                                            <li>
+                                                <a href="">
+                                                    <button>
+                                                        Corporativo
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <?php endforeach; ?>
+                                        </ul>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </li>
                         <li>
                             <a href="">Contato</a>

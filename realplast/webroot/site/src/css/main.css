@@ -156,13 +156,29 @@ header .menu {
 }
 @media (min-width: 1600px) and (max-width: 2080px) {
   header .menu {
-    padding-left: 100px;
+    padding-left: 140px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  header .menu {
+    padding-left: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  header .menu {
+    padding-left: 50px;
   }
 }
 @media (max-width: 992px) {
   header .menu {
     display: none;
   }
+}
+header .menu .drop {
+  margin-top: 1px;
+}
+header .menu .contato-li {
+  z-index: 999;
 }
 header .menu li {
   padding: 0px 25px;
@@ -181,15 +197,100 @@ header .menu li a {
   color: #253E4F;
   font-weight: 400;
   font-size: 20px;
+  /*@include media-breakpoint-ul(992px) {
+      &::before {
+          content: "";
+          width: 100%;
+          height: 0;
+          background-color: red;
+          position: absolute;
+          bottom: -0.5rem;
+          left: 0;
+          //transition: ;
+          opacity: 0;
+          transform: translateY(10px);
+      }
+  }
+
+  @include media-hover {
+      &::before {
+          height: 1px;
+          opacity: 1;
+          transform: translateY(0);
+          margin-top: 30px;
+          display: flex;
+          margin-top: 50px;
+      }
+  }*/
+  /*& .active {
+      &::after {
+          content: "kkkkkkk";
+          color: #F0F0F0;
+          border-bottom: 5px solid #FF6A00;
+          width: 4%;
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          //left: 0;
+      }
+  }*/
   line-height: 22px;
   white-space: nowrap;
+}
+@media (max-width: 1600px) {
+  header .menu li a {
+    font-size: 16px;
+  }
+}
+@media (hover: hover) {
+  header .menu li .home:hover::after {
+    content: "home";
+    color: #F0F0F0;
+    border-bottom: 5px solid #FF6A00;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+  }
+}
+@media (hover: hover) {
+  header .menu li .sobre-nos:hover::after {
+    content: "sobre-nos";
+    color: #F0F0F0;
+    border-bottom: 5px solid #FF6A00;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+  }
+}
+@media (hover: hover) {
+  header .menu li .produto:hover::after {
+    content: "produtos";
+    color: #F0F0F0;
+    border-bottom: 5px solid #FF6A00;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+  }
+}
+header .menu li .contato {
+  z-index: 999;
+}
+@media (hover: hover) {
+  header .menu li .contato:hover::after {
+    content: "contato";
+    color: #F0F0F0;
+    border-bottom: 5px solid #FF6A00;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+  }
 }
 header .menu li .seta {
   width: 20px;
 }
 @media (min-width: 1600px) and (max-width: 2980px) {
   header .div-input {
-    padding-left: 220px;
+    padding-left: 200px;
   }
 }
 @media (min-width: 1400px) and (max-width: 1600px) {
@@ -210,6 +311,7 @@ header .menu li .seta {
 @media (max-width: 992px) {
   header .div-input {
     justify-content: flex-end;
+    margin-top: 0px !important;
   }
 }
 header .div-input input {
@@ -224,6 +326,11 @@ header .div-input input {
   font-weight: 400;
   font-size: 20px;
   padding: 10px 0px !important;
+}
+@media (max-width: 1600px) {
+  header .div-input input {
+    font-size: 16px;
+  }
 }
 @media (max-width: 992px) {
   header .div-input input {
@@ -249,6 +356,11 @@ header .div-input input:focus {
 @media (min-width: 992px) {
   header .div-input .button-pesquisa {
     display: flex;
+  }
+}
+@media (max-width: 1600px) {
+  header .div-input .button-pesquisa {
+    width: 42px;
   }
 }
 header .div-input .button-menu {
@@ -306,6 +418,11 @@ header .div-input img {
   line-height: 77px;
   color: #253E4F;
 }
+@media (max-width: 1600px) {
+  .breadcrumb-wrapper div h2 {
+    font-size: 50px;
+  }
+}
 @media (max-width: 992px) {
   .breadcrumb-wrapper div h2 {
     font-size: 40px;
@@ -324,6 +441,11 @@ header .div-input img {
 .breadcrumb-wrapper .links a {
   color: #253E4F;
   font-size: 18px;
+}
+@media (max-width: 1400px) {
+  .breadcrumb-wrapper .links a {
+    font-size: 16px;
+  }
 }
 @media (max-width: 576px) {
   .breadcrumb-wrapper .links a {
@@ -356,6 +478,11 @@ header .div-input img {
   font-size: 22px;
   line-height: 24px;
 }
+@media (max-width: 1600px) {
+  .footer .footer-div .row ul li a {
+    font-size: 16px;
+  }
+}
 .footer .footer-div .row ul li a:hover {
   color: #FF3C01;
 }
@@ -370,6 +497,13 @@ header .div-input img {
 .footer .footer-div .links-site-div .links-site li {
   margin: 30px 0px;
 }
+.footer .footer-div .redes img {
+  width: 70%;
+}
+.footer .footer-div .redes img:hover {
+  width: 80%;
+  transition: width 0.2s ease-in-out;
+}
 .footer .footer-div .infos img {
   margin-right: 10px;
   margin-bottom: 5px;
@@ -380,25 +514,31 @@ header .div-input img {
 .footer .footer-div .redes li {
   margin: 30px 0px;
 }
-.footer .copyright {
-  color: #253E4F;
+.footer .linha {
   border-top: 1px solid #86A3B7;
 }
-.footer .copyright div {
-  padding: 20px 30px;
-  font-size: 16px !important;
+.footer .linha .copyright {
+  color: #86A3B7;
+}
+.footer .linha .copyright div {
+  padding: 20px 0px;
+  font-size: 20px;
   font-weight: 100 !important;
 }
-.footer .copyright div a {
+@media (max-width: 1600px) {
+  .footer .linha .copyright div {
+    font-size: 15px !important;
+  }
+}
+.footer .linha .copyright div a {
   text-decoration: none;
-  color: #253E4F;
+  color: #86A3B7;
   border-bottom: 1px solid #86A3B7;
 }
 
 @media (max-width: 575.98px) {
   .footer {
     background-size: cover;
-    height: 950px;
   }
   .footer .logo-footer {
     justify-content: center !important;
@@ -433,6 +573,9 @@ header .div-input img {
   }
   .footer .redes li {
     margin: 0px 20px !important;
+  }
+  .copyright {
+    padding-bottom: 20px;
   }
   .copyright div {
     justify-content: center !important;
@@ -500,15 +643,15 @@ header .div-input img {
 .banner {
   background-image: url(../../../../../webroot/site/src/images/backgrounds/x.svg);
   background-repeat: no-repeat;
-  background-size: 90%;
-  background-position-x: 280%;
+  background-size: 70%;
+  background-position-x: 130%;
   position: relative;
   background-color: white;
 }
 @media (max-width: 1550px) {
   .banner {
-    background-size: 130%;
-    background-position-x: -50%;
+    background-size: 92%;
+    background-position-x: 350%;
   }
 }
 @media (max-width: 992px) {
@@ -536,10 +679,12 @@ header .div-input img {
 .banner .mySwiper-banner .swiper-button-next,
 .banner .mySwiper-banner .swiper-button-prev {
   color: white;
-  padding-left: 20px;
+  padding: 12px !important;
+  --swiper-navigation-size: 20px;
+  /*padding-left: 20px;
   padding-right: 20px;
   padding-top: -3px;
-  padding-bottom: -3px;
+  padding-bottom: -3px;*/
   border-radius: 50%;
   background-color: #FF3C01;
 }
@@ -561,7 +706,7 @@ header .div-input img {
 }
 .banner .mySwiper-banner .swiper-button-next:after,
 .banner .mySwiper-banner .swiper-button-prev:after {
-  font-size: 12px !important;
+  font-size: 8px !important;
   font-weight: 900;
 }
 .banner .mySwiper-banner .swiper-slide h2 {
@@ -569,9 +714,19 @@ header .div-input img {
   font-size: 64px;
   color: #253E4F;
 }
+@media (max-width: 1600px) {
+  .banner .mySwiper-banner .swiper-slide h2 {
+    font-size: 50px;
+  }
+}
 .banner .mySwiper-banner .swiper-slide p {
   font-weight: 400;
   font-size: 20px;
+}
+@media (max-width: 1600px) {
+  .banner .mySwiper-banner .swiper-slide p {
+    font-size: 16px;
+  }
 }
 .banner .mySwiper-banner .swiper-slide .banner-conteudo .btn-custom2 {
   background: linear-gradient(90deg, #FF3C01 0%, #FF6A00 100%);
@@ -580,10 +735,15 @@ header .div-input img {
   padding: 15px 30px;
   border-radius: 46px;
 }
+@media (max-width: 1600px) {
+  .banner .mySwiper-banner .swiper-slide .banner-conteudo .btn-custom2 {
+    font-size: 16px;
+  }
+}
 .banner .mySwiper-banner .swiper-slide svg {
   background-color: white;
   border-radius: 50%;
-  padding: 5px;
+  padding: 5px 7px;
 }
 .banner .mySwiper-banner .swiper-slide .imagem img {
   width: 50%;
@@ -613,6 +773,11 @@ header .div-input img {
   font-size: 32px;
   line-height: 39px;
 }
+@media (max-width: 1600px) {
+  .banner-buttons .mySwiper-buttons .swiper-slide .button-linhas button {
+    font-size: 24px;
+  }
+}
 @media (max-width: 767px) {
   .banner-buttons .mySwiper-buttons .swiper-slide .button-linhas button {
     font-size: 22px;
@@ -623,6 +788,7 @@ header .div-input img {
   .banner-buttons .mySwiper-buttons .swiper-slide .button-linhas button {
     font-size: 15px;
     padding: 15px 10px;
+    display: inline-block;
   }
 }
 @media (max-width: 767px) {
@@ -651,8 +817,12 @@ header .div-input img {
 .banner-buttons .mySwiper-buttons .swiper-slide .button-linhas:hover img {
   margin-right: 20px;
 }
+.banner-buttons .mySwiper-buttons .swiper-pagination {
+  --swiper-theme-color: #FF3C01;
+}
+
 .areas {
-  margin: 0px 20px;
+  margin: 0px 18px;
   background: linear-gradient(90deg, #162632 0%, #253E4F 100%);
   transition: background-size 0.5s ease-in-out;
 }
@@ -662,6 +832,11 @@ header .div-input img {
   background-position-x: 0px !important;
   overflow: hidden;
   margin: 0px;
+}
+@media (min-width: 992px) and (max-width: 2000px) {
+  .areas .row {
+    background-position-y: 20px !important;
+  }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .areas .row {
@@ -705,6 +880,11 @@ header .div-input img {
   font-size: 64px;
   line-height: 77px;
 }
+@media (max-width: 1600px) {
+  .areas .row .conteudo h2 {
+    font-size: 46px;
+  }
+}
 @media (max-width: 992px) {
   .areas .row .conteudo h2 {
     font-size: 40px;
@@ -720,6 +900,12 @@ header .div-input img {
 @media (max-width: 1530px) {
   .areas .row .conteudo p {
     width: 80%;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1600px) {
+  .areas .row .conteudo p {
+    font-size: 16px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -740,10 +926,15 @@ header .div-input img {
   padding: 15px 30px;
   border-radius: 46px;
 }
+@media (max-width: 1600px) {
+  .areas .row .conteudo button {
+    font-size: 16px;
+  }
+}
 .areas .row .conteudo button svg {
   background-color: white;
   border-radius: 50%;
-  padding: 5px;
+  padding: 5px 7px;
 }
 .areas:hover .row {
   transition: background-position-y 0.2s ease-in-out;
@@ -768,28 +959,18 @@ header .div-input img {
 .areas2 .em-breve::after {
   content: "Em breve!";
   position: absolute;
+  position: absolute;
   top: 50%;
-  left: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-weight: 700;
   font-size: 64px;
   line-height: 77px;
   text-align: center;
   color: #FFFFFF;
 }
-@media (max-width: 992px) {
-  .areas2 .em-breve::after {
-    left: 30%;
-  }
-}
-@media (max-width: 576px) {
-  .areas2 .em-breve::after {
-    left: 30%;
-    font-size: 40px;
-  }
-}
 @media (max-width: 450px) {
   .areas2 .em-breve::after {
-    left: 20%;
     font-size: 40px;
   }
 }
@@ -824,6 +1005,11 @@ header .div-input img {
     font-size: 40px;
   }
 }
+@media (max-width: 1600px) {
+  .areas2 .row .conteudo h2 {
+    font-size: 46px;
+  }
+}
 .areas2 .row .conteudo p {
   font-family: "Inter";
   font-style: normal;
@@ -836,6 +1022,11 @@ header .div-input img {
 @media (max-width: 1530px) {
   .areas2 .row .conteudo p {
     width: 80%;
+  }
+}
+@media (max-width: 1600px) {
+  .areas2 .row .conteudo p {
+    font-size: 16px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -856,10 +1047,15 @@ header .div-input img {
   padding: 15px 30px;
   border-radius: 46px;
 }
+@media (max-width: 1600px) {
+  .areas2 .row .conteudo button {
+    font-size: 16px;
+  }
+}
 .areas2 .row .conteudo button svg {
   background-color: white;
   border-radius: 50%;
-  padding: 5px;
+  padding: 5px 7px;
 }
 .areas2:hover .row {
   transition: background-position-y 0.2s ease-in-out;
@@ -896,6 +1092,11 @@ header .div-input img {
   font-size: 64px;
   line-height: 77px;
 }
+@media (max-width: 1600px) {
+  .areas4 .row .conteudo h2 {
+    font-size: 46px;
+  }
+}
 @media (max-width: 992px) {
   .areas4 .row .conteudo h2 {
     font-size: 40px;
@@ -913,6 +1114,11 @@ header .div-input img {
 @media (max-width: 1530px) {
   .areas4 .row .conteudo p {
     width: 80%;
+  }
+}
+@media (max-width: 1600px) {
+  .areas4 .row .conteudo p {
+    font-size: 16px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -933,10 +1139,15 @@ header .div-input img {
   padding: 15px 30px;
   border-radius: 46px;
 }
+@media (max-width: 1600px) {
+  .areas4 .row .conteudo button {
+    font-size: 16px;
+  }
+}
 .areas4 .row .conteudo button svg {
   background-color: white;
   border-radius: 50%;
-  padding: 5px;
+  padding: 5px 7px;
 }
 .areas4:hover .row {
   transition: background-position-y 0.2s ease-in-out;
@@ -958,11 +1169,21 @@ header .div-input img {
   font-size: 28px;
   line-height: 135%;
 }
+@media (max-width: 1600px) {
+  .produtos .mySwiper-produtos .swiper-slide .conteudo h2 {
+    font-size: 24px;
+  }
+}
 .produtos .mySwiper-produtos .swiper-slide .conteudo a {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #FF3C01;
+}
+@media (max-width: 1600px) {
+  .produtos .mySwiper-produtos .swiper-slide .conteudo a {
+    font-size: 16px;
+  }
 }
 .produtos .mySwiper-produtos .swiper-slide .conteudo a svg {
   width: 10px;
@@ -993,7 +1214,7 @@ header .div-input img {
   margin-left: 15px;
 }
 .produtos .mySwiper-produtos .swiper-pagination {
-  --swiper-theme-color: #253E4F;
+  --swiper-theme-color: #FF3C01;
 }
 
 #produto {
@@ -1138,9 +1359,14 @@ header .div-input img {
   color: #FF3C01;
   z-index: 9;
 }
+@media (max-width: 1600px) {
+  .corporativo .conteudo a {
+    font-size: 16px;
+  }
+}
 @media (min-width: 0px) and (max-width: 767px) {
   .corporativo .conteudo a {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .corporativo .conteudo a svg {
@@ -1202,16 +1428,18 @@ header .div-input img {
 .produto-detalhe .mySwiper-produto-detalhe .swiper-button-next,
 .produto-detalhe .mySwiper-produto-detalhe .swiper-button-prev {
   color: white;
-  padding-left: 20px;
+  padding: 12px !important;
+  --swiper-navigation-size: 20px;
+  /*padding-left: 20px;
   padding-right: 20px;
   padding-top: -3px;
-  padding-bottom: -3px;
+  padding-bottom: -3px;*/
   border-radius: 50%;
   background-color: #FF3C01;
 }
 .produto-detalhe .mySwiper-produto-detalhe .swiper-button-next:after,
 .produto-detalhe .mySwiper-produto-detalhe .swiper-button-prev:after {
-  font-size: 12px !important;
+  font-size: 8px !important;
   font-weight: 900;
 }
 .produto-detalhe .mySwiper-produto-detalhe .swiper-slide .imagem img {
@@ -1303,6 +1531,18 @@ header .div-input img {
   font-size: 20px;
   line-height: 135%;
 }
+@media (max-width: 1400px) {
+  .kits p,
+.kits h6 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .kits p,
+.kits h6 {
+    font-size: 16px;
+  }
+}
 .kits p span,
 .kits h6 span {
   font-weight: 900;
@@ -1312,6 +1552,16 @@ header .div-input img {
   .kits .conteudo-kit {
     padding-top: 20px;
     justify-content: start !important;
+  }
+}
+@media (max-width: 992px) and (max-width: 1400px) {
+  .kits .conteudo-kit {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) and (max-width: 992px) {
+  .kits .conteudo-kit {
+    font-size: 16px;
   }
 }
 @media (max-width: 992px) {
@@ -1329,6 +1579,16 @@ header .div-input img {
   font-weight: 400;
   font-size: 20px;
   line-height: 135%;
+}
+@media (max-width: 1400px) {
+  .kits .conteudo-kit ul li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .kits .conteudo-kit ul li {
+    font-size: 16px;
+  }
 }
 .kits .conteudo-kit ul li span {
   font-weight: 900;
@@ -1405,6 +1665,16 @@ header .div-input img {
   line-height: 24px;
   color: #FF3C01;
 }
+@media (max-width: 1400px) {
+  .relacionados .mySwiper-relacionados .swiper-slide .conteudo a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .relacionados .mySwiper-relacionados .swiper-slide .conteudo a {
+    font-size: 16px;
+  }
+}
 .relacionados .mySwiper-relacionados .swiper-slide .conteudo a svg {
   width: 10px;
   font-weight: 100;
@@ -1438,7 +1708,7 @@ header .div-input img {
   margin-left: 15px;
 }
 .relacionados .mySwiper-relacionados .swiper-pagination {
-  --swiper-theme-color: #253E4F;
+  --swiper-theme-color: #FF3C01;
   display: none !important;
 }
 @media (max-width: 576px) {
@@ -1449,10 +1719,8 @@ header .div-input img {
 .relacionados .mySwiper-relacionados .swiper-button-next,
 .relacionados .mySwiper-relacionados .swiper-button-prev {
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: -3px;
-  padding-bottom: -3px;
+  padding: 12px !important;
+  --swiper-navigation-size: 20px;
   border-radius: 50%;
   background-color: #FF3C01;
 }
@@ -1464,7 +1732,7 @@ header .div-input img {
 }
 .relacionados .mySwiper-relacionados .swiper-button-next:after,
 .relacionados .mySwiper-relacionados .swiper-button-prev:after {
-  font-size: 12px !important;
+  font-size: 8px !important;
   font-weight: 900;
 }
 /*# sourceMappingURL=main.css.map */

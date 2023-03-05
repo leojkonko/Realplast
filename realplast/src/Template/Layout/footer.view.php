@@ -19,13 +19,13 @@
                         <li>
                             <a href="https://www.google.com.br/maps/place/Dustech+-+Ind%C3%BAstria+e+Com%C3%A9rcio+de+Tintas+em+P%C3%B3/@-29.2193736,-51.5208998,17z/data=!3m1!4b1!4m6!3m5!1s0x951c3df1e6285cc1:0xf17d3d08347c6bc5!8m2!3d-29.2193783!4d-51.5187111!16s%2Fg%2F11jj4bgnsf" target="_blank">
                                 <img src="<?= asset('/images/icones/localizacao.svg') ?>" alt="">
-                            Av. Rosseti, 490, - Caxias do Sul - RS
+                            Av. Rosseti, 490 - Caxias do Sul - RS
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="<?= asset('/images/icones/telefone.svg') ?>" alt="">
-                            54 3771-4771 | 54 3771-3209
+                            <a href="">54 3771-4771</a> | <a href="">54 3771-3209</a>
                             </a>
                         </li>
                         <li>
@@ -50,15 +50,19 @@
                 </div>
             </div>
         </div>
-        <div class="row copyright">
-            <div class="col-lg-8 col-md-12 col-12  d-flex justify-content-center direitos">
-                Copyright @ <?= date('Y') ?> Dustech Premium Powder Coating. Todos os direitos reservados. CNPJ 00.000.000/0000-00
-            </div>
-            <div class="col-lg-2 col-md-6 politica col-12">
-                <a href="">Política de privacidade</a>
-            </div>
-            <div class="col-lg-1 col-md-6 logo-ellite col-12">
-                <img src="<?= asset('/images/logos/logo-ellite.svg') ?>" width="100" alt="">
+        <div class="linha">
+            <div class="container">
+                <div class="row copyright">
+                    <div class="col-lg-7 col-md-12 col-12  d-flex justify-content-center direitos">
+                        Copyright @ <?= date('Y') ?> Realplast Componentes. Todos os direitos reservados. CNPJ 00.000.000/0000-00
+                    </div>
+                    <div class="col-lg-3 col-md-6 politica col-12">
+                        <a href="">Política de privacidade</a>
+                    </div>
+                    <div class="col-lg-1 col-md-6 logo-ellite col-12">
+                        <img src="<?= asset('/images/logos/logo-ellite.svg') ?>" width="100" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

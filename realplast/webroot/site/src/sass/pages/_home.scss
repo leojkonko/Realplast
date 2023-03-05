@@ -7,14 +7,14 @@
 .banner {
     background-image: url(../../../../../webroot/site/src/images/backgrounds/x.svg);
     background-repeat: no-repeat;
-    background-size: 90%;
-    background-position-x: 280%;
+    background-size: 70%;
+    background-position-x: 130%;
     position: relative;
     background-color: white;
 
     @media (max-width: 1550px) {
-        background-size: 130%;
-        background-position-x: -50%;
+        background-size: 92%;
+        background-position-x: 350%;
     }
 
     @media (max-width: 992px) {
@@ -43,11 +43,12 @@
         & .swiper-button-next,
         .swiper-button-prev {
             color: white;
-            //padding: 18px !important;
-            padding-left: 20px;
+            padding: 12px !important;
+            --swiper-navigation-size: 20px;
+            /*padding-left: 20px;
             padding-right: 20px;
             padding-top: -3px;
-            padding-bottom: -3px;
+            padding-bottom: -3px;*/
             border-radius: 50%;
             background-color: #FF3C01;
         }
@@ -70,7 +71,7 @@
 
         & .swiper-button-next:after,
         .swiper-button-prev:after {
-            font-size: 12px !important;
+            font-size: 8px !important;
             font-weight: 900;
         }
 
@@ -79,11 +80,19 @@
                 font-weight: 700;
                 font-size: 64px;
                 color: #253E4F;
+
+                @media (max-width: 1600px) {
+                    font-size: 50px;
+                }
             }
 
             & p {
                 font-weight: 400;
                 font-size: 20px;
+
+                @media (max-width: 1600px) {
+                    font-size: 16px;
+                }
             }
 
             & .banner-conteudo {
@@ -93,13 +102,19 @@
                     font-size: 20px;
                     padding: 15px 30px;
                     border-radius: 46px;
+
+                    @media (max-width: 1600px) {
+                        font-size: 16px;
+                    }
                 }
             }
 
             & svg {
                 background-color: white;
                 border-radius: 50%;
-                padding: 5px;
+                padding: 5px 7px;
+
+                & path {}
             }
 
             & .imagem {
@@ -140,6 +155,7 @@
 
             & .button-linhas {
 
+
                 & button {
                     border-radius: none !important;
                     background: linear-gradient(90deg, #FF3C01 0%, #FF6A00 100%);
@@ -151,6 +167,10 @@
                     font-size: 32px;
                     line-height: 39px;
 
+                    @media (max-width: 1600px) {
+                        font-size: 24px;
+                    }
+
                     @media (max-width: 767px) {
                         font-size: 22px;
                         padding: 25px 15px;
@@ -159,6 +179,7 @@
                     @media (max-width: 576px) {
                         font-size: 15px;
                         padding: 15px 10px;
+                        display: inline-block;
                     }
 
                     & img {
@@ -203,13 +224,14 @@
 
         & .swiper-pagination {
             //bottom: 160px;
+            --swiper-theme-color: #FF3C01;
         }
     }
 }
 
 //-----------------------------------------------------------------------------section areas
 .areas {
-    margin: 0px 20px;
+    margin: 0px 18px;
     background: linear-gradient(90deg, #162632 0%, #253E4F 100%);
     transition: background-size 0.5s ease-in-out;
     //position: relative;
@@ -218,8 +240,13 @@
         background-image: url(../../../../../webroot/site/src/images/backgrounds/cadeira.svg);
         background-repeat: no-repeat;
         background-position-x: 0px !important;
+
         overflow: hidden;
         margin: 0px;
+
+        @media (min-width: 992px)and(max-width: 2000px) {
+            background-position-y: 20px !important;
+        }
 
         @media (min-width: 1100px)and(max-width: 1200px) {
             background-position-x: -220%;
@@ -262,6 +289,10 @@
                 font-size: 64px;
                 line-height: 77px;
 
+                @media (max-width: 1600px) {
+                    font-size: 46px;
+                }
+
                 @media (max-width: 992px) {
                     font-size: 40px;
                 }
@@ -276,6 +307,11 @@
 
                 @media (max-width: 1530px) {
                     width: 80%;
+                    font-size: 16px;
+                }
+
+                @media (max-width: 1600px) {
+                    font-size: 16px;
                 }
 
                 @media (min-width:992px)and (max-width: 1200px) {
@@ -297,10 +333,14 @@
                 padding: 15px 30px;
                 border-radius: 46px;
 
+                @media (max-width: 1600px) {
+                    font-size: 16px;
+                }
+
                 & svg {
                     background-color: white;
                     border-radius: 50%;
-                    padding: 5px;
+                    padding: 5px 7px;
                 }
 
             }
@@ -343,20 +383,12 @@
         &::after {
             content: 'Em breve!';
             position: absolute;
+            position: absolute;
             top: 50%;
-            left: 40%;
-
-            @media (max-width: 992px) {
-                left: 30%;
-            }
-
-            @media (max-width: 576px) {
-                left: 30%;
-                font-size: 40px;
-            }
+            left: 50%;
+            transform: translate(-50%, -50%);
 
             @media (max-width: 450px) {
-                left: 20%;
                 font-size: 40px;
             }
 
@@ -402,6 +434,10 @@
                 @media (max-width: 992px) {
                     font-size: 40px;
                 }
+
+                @media (max-width: 1600px) {
+                    font-size: 46px;
+                }
             }
 
             & p {
@@ -415,6 +451,10 @@
 
                 @media (max-width: 1530px) {
                     width: 80%;
+                }
+
+                @media (max-width: 1600px) {
+                    font-size: 16px;
                 }
 
                 @media (min-width:992px)and (max-width: 1200px) {
@@ -437,10 +477,14 @@
                 padding: 15px 30px;
                 border-radius: 46px;
 
+                @media (max-width: 1600px) {
+                    font-size: 16px;
+                }
+
                 & svg {
                     background-color: white;
                     border-radius: 50%;
-                    padding: 5px;
+                    padding: 5px 7px;
                 }
 
             }
@@ -501,6 +545,10 @@
                 font-size: 64px;
                 line-height: 77px;
 
+                @media (max-width: 1600px) {
+                    font-size: 46px;
+                }
+
                 @media (max-width: 992px) {
                     font-size: 40px;
                 }
@@ -517,6 +565,10 @@
 
                 @media (max-width: 1530px) {
                     width: 80%;
+                }
+
+                @media (max-width: 1600px) {
+                    font-size: 16px;
                 }
 
                 @media (min-width:992px)and (max-width: 1200px) {
@@ -539,10 +591,14 @@
                 padding: 15px 30px;
                 border-radius: 46px;
 
+                @media (max-width: 1600px) {
+                    font-size: 16px;
+                }
+
                 & svg {
                     background-color: white;
                     border-radius: 50%;
-                    padding: 5px;
+                    padding: 5px 7px;
                 }
 
             }
@@ -583,6 +639,10 @@
                     font-weight: 700;
                     font-size: 28px;
                     line-height: 135%;
+
+                    @media (max-width: 1600px) {
+                        font-size: 24px;
+                    }
                 }
 
                 & a {
@@ -591,6 +651,10 @@
                     line-height: 24px;
 
                     color: #FF3C01;
+
+                    @media (max-width: 1600px) {
+                        font-size: 16px;
+                    }
 
                     & svg {
                         width: 10px;
@@ -631,7 +695,7 @@
         }
 
         & .swiper-pagination {
-            --swiper-theme-color: #253E4F;
+            --swiper-theme-color: #FF3C01;
         }
     }
 }
