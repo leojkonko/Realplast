@@ -452,6 +452,9 @@ header .div-input img {
     font-size: 14px;
   }
 }
+.breadcrumb-wrapper .links a:hover {
+  color: #FF3C01;
+}
 
 .footer {
   background: #F0F0F0;
@@ -475,7 +478,7 @@ header .div-input img {
   text-decoration: none !important;
   color: #253E4F;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 24px;
 }
 @media (max-width: 1600px) {
@@ -1219,6 +1222,278 @@ header .div-input img {
 .produtos .mySwiper-produtos .swiper-pagination {
   --swiper-theme-color: #FF3C01;
   bottom: -10px !important;
+}
+
+#empresa {
+  background: #f0f0f0;
+}
+#empresa .swiper {
+  width: 100%;
+}
+#empresa .swiper .swiper-wrapper {
+  position: absolute;
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  #empresa .swiper {
+    margin-top: -100px;
+  }
+}
+#empresa .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#empresa .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+#empresa .swiper .swiper-button-next,
+#empresa .swiper .swiper-button-prev {
+  color: white;
+  padding: 12px !important;
+  --swiper-navigation-size: 20px;
+  /*padding-left: 20px;
+  padding-right: 20px;
+  padding-top: -3px;
+  padding-bottom: -3px;*/
+  border-radius: 50%;
+  background-color: #FF3C01;
+}
+#empresa .swiper .swiper-button-next:after,
+#empresa .swiper .swiper-button-prev:after {
+  font-size: 8px !important;
+  font-weight: 900;
+}
+#empresa .swiper .swiper-pagination-bullet-active {
+  background: #c44438 !important;
+}
+#empresa .swiper .swiper-pagination-bullet {
+  background: #3d2c2c;
+}
+#empresa .conteudo .titulo h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #c44438;
+  text-align: center;
+}
+#empresa .conteudo .p p {
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 135%;
+}
+@media (max-width: 1600px) {
+  #empresa .conteudo .p p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  #empresa .conteudo .p p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  #empresa .conteudo .p p {
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  #empresa .valores-empresa {
+    margin-top: -100px;
+  }
+}
+#empresa .valores-empresa .conteudo .estilo {
+  background: rgba(172, 169, 169, 0.2);
+  margin: 0px 10px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  transition: margin-top 0.2s ease-in-out 0s;
+}
+@media (max-width: 992px) {
+  #empresa .valores-empresa .conteudo {
+    margin: 20px 0px;
+  }
+}
+#empresa .valores-empresa .conteudo .titulo h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 77px;
+  color: #253E4F;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  #empresa .valores-empresa .conteudo .titulo h2 {
+    font-size: 32px;
+  }
+}
+#empresa .valores-empresa .conteudo .p p {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 135%;
+}
+@media (max-width: 992px) {
+  #empresa .valores-empresa .conteudo .p p {
+    text-align: center;
+  }
+}
+@media (max-width: 1600px) {
+  #empresa .valores-empresa .conteudo .p p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  #empresa .valores-empresa .conteudo .p p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+#empresa .valores-empresa .estilo:hover {
+  background: rgba(99, 97, 97, 0.2);
+  margin-top: -20px;
+}
+#empresa .valores-empresa .estilo:hover h2 {
+  color: #FF3C01;
+}
+
+.contato .titulo h2 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #253E4F;
+}
+@media (max-width: 1600px) {
+  .contato .titulo h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .contato .titulo h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .contato .titulo h2 {
+    font-size: 36px;
+  }
+}
+.contato .titulo h2 span {
+  font-weight: 900 !important;
+  color: #FF3C01;
+}
+.contato .titulo p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 992px) {
+  .contato .titulo p {
+    text-align: center;
+  }
+}
+@media (max-width: 1600px) {
+  .contato .titulo p {
+    font-size: 16px;
+  }
+}
+.contato .infos img {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  width: 20px;
+}
+.contato .infos img:hover {
+  width: 25px;
+  transition: width 0.2s ease-in-out;
+}
+.contato .infos li {
+  margin: 25px 0px;
+  list-style: none;
+}
+@media (max-width: 992px) {
+  .contato .infos li {
+    text-align: center;
+  }
+}
+.contato .infos li a {
+  text-decoration: none !important;
+  color: #253E4F;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 1600px) {
+  .contato .infos li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .contato .infos li a {
+    text-align: center;
+  }
+}
+@media (max-width: 756px) {
+  .contato .infos li a {
+    font-size: 16px;
+  }
+}
+.contato .infos li a:hover {
+  color: #FF3C01;
+}
+.contato .form {
+  background-color: #F0F0F0;
+  border-radius: 4px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  padding: 40px 40px;
+}
+.contato .form form p {
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 1600px) {
+  .contato .form form p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .contato .form form p {
+    text-align: center;
+  }
+}
+.contato .form form p a {
+  color: #FF3C01;
+}
+.contato .form form p a:hover {
+  color: #FF6A00;
+}
+.contato .form form input {
+  margin-bottom: 15px;
+  color: #253E4F;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 1600px) {
+  .contato .form form input {
+    font-size: 16px;
+  }
+}
+.contato .form form textarea {
+  color: #253E4F;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 1600px) {
+  .contato .form form textarea {
+    font-size: 16px;
+  }
 }
 
 #produto {

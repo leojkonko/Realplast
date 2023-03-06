@@ -10,13 +10,20 @@ var swiper = new Swiper(".mySwiper-banner", {
         prevEl: ".mySwiper-banner .swiper-button-prev",
     },
 });
+var swiper = new Swiper(".mySwiper-empresa", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".mySwiper-empresa .swiper-button-next",
+        prevEl: ".mySwiper-empresa .swiper-button-prev",
+    },
+});
 
 var swiper = new Swiper(".mySwiper-buttons", {
     slidesPerView: 2,
-    clickable: true,
     spaceBetween: 20,
     pagination: {
         el: ".mySwiper-buttons .swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
         1200: {
@@ -30,10 +37,10 @@ var swiper = new Swiper(".mySwiper-buttons", {
 
 var swiper = new Swiper(".mySwiper-produtos", {
     slidesPerView: 2,
-    clickable: true,
     spaceBetween: 20,
     pagination: {
         el: ".mySwiper-produtos .swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
         1200: {
@@ -47,10 +54,10 @@ var swiper = new Swiper(".mySwiper-produtos", {
 
 var swiper = new Swiper(".mySwiper-relacionados", {
     slidesPerView: 2,
-    clickable: true,
     spaceBetween: 30,
     pagination: {
         el: ".mySwiper-relacionados .swiper-pagination",
+        clickable: true,
     },
     navigation: {
         nextEl: ".mySwiper-relacionados .swiper-button-next",

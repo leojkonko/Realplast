@@ -173,15 +173,16 @@
 
     & .form-select {
       color: #86A3B7;
+
+      & .circle-color {
+        width: 1rem;
+        height: 1rem;
+        display: block;
+        border-radius: $border-radius-pill;
+      }
     }
 
     & .custom-file-input {
-      /*border-style: dashed;
-      border-width: 1px;
-      border-color: #000;
-      border-spacing: 16px;
-      border-collapse: separate;
-      padding: 10px;*/
       width: 100%;
       height: 100%;
       background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='%2386A3B7' stroke-width='2' stroke-dasharray='10%2c 14' stroke-dashoffset='22' stroke-linecap='square'/%3e%3c/svg%3e");

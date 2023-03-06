@@ -345,6 +345,10 @@ header {
             @media (max-width: 576px) {
                 font-size: 14px;
             }
+
+            &:hover {
+                color: #FF3C01;
+            }
         }
     }
 }

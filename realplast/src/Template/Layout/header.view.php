@@ -32,6 +32,8 @@
 
     <?php /* ==== Stylesheets ==== */ ?>
     <link rel="stylesheet" href="<?= asset('css/bootstrap.css') ?>"> <?php /* ==== Arquivo do bootstrap ==== */ ?>
+    <?php /* Adicionar no head logo abaixo do bootstrap.css */ ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
     
@@ -111,53 +113,40 @@
                 <div class="row">
                     <ul class="menu-offcanvas">
                         <li>
-                            <a href="">Home</a>
+                            <a href="<?= url('/') ?>">Home</a>
                         </li>
                         <li>
-                            <a href="">Sobre nós</a>
+                            <a href="<?= url('empresa') ?>">Sobre nós</a>
                         </li>
-                        <!--<li  class="links">
-                            <a href="">Produtos</a>
-                        </li>
-                        <li class="buttons">
-                           <div>
-                                <button class="btn btn-custom">Corporativo</button>
-                           </div>
-                           <div>
-                              <button class="btn btn-custom mx-2">Componentes</button>
-                           </div>
-                           <div>
-                                 <button class="btn btn-custom disabled">Escolar - Em breve</button>
-                           </div>
-                        </li>-->
                         <li>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Produtos
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                        <?php foreach(range(0,4) as $i) : ?>
-                                            <li>
-                                                <a href="">
-                                                    <button>
-                                                        Corporativo
-                                                    </button>
-                                                </a>
-                                            </li>
-                                            <?php endforeach; ?>
-                                        </ul>    
+                            <!--<div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Produtos
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                            <?php foreach(range(0,4) as $i) : ?>
+                                                <li>
+                                                    <a href="">
+                                                        <button>
+                                                            Corporativo
+                                                        </button>
+                                                    </a>
+                                                </li>
+                                                <?php endforeach; ?>
+                                            </ul>    
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div>-->
+                            <a href="<?= url('produtos') ?>">Produtos</a>
                         </li>
                         <li>
-                            <a href="">Contato</a>
+                            <a href="<?= url('contato') ?>">Contato</a>
                         </li>
                     </ul>
                     <div class="col-12 d-flex justify-content-center mt-4">

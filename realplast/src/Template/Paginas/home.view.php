@@ -254,7 +254,7 @@
                         <div class="flex-column inputs">
                             <input type="text" class="form-control" placeholder="Nome completo *">
                             <input type="text" class="form-control" placeholder="E-mail *">
-                            <input type="text" class="form-control" placeholder="Telefone">
+                            <input type="text" class="form-control mask-telefone" placeholder="Telefone">
                             <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
                         </div>
                         <div class="modal-body2">
@@ -274,14 +274,22 @@
                                         </div>
                                         <div class="input-group mt-1">
                                             <span class="input-group-text" id="basic-addon1">Cor Desejada</span>
-                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                                        <option value="1">Opção 1</option>
-                                                        <option value="2">Opção 2</option>
-                                                        <option value="3">
-                                                        <img src="<?= asset('/images/icones/bolinha.png') ?>" alt="">    
-                                                        Opção 3</option>
-                                                        <option value="4">Opção 4</option>
-                                                    </select>  
+<!--
+<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+<option value="1">Opção 1</option>
+<option value="2">Opção 2</option>
+<option value="3">
+<img src="<?= asset('/images/icones/bolinha.png') ?>" alt="">    
+Opção 3</option>
+<option value="4">Opção 4</option>
+</select> --> 
+                                                <select class="selectpicker position-relative form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                    <option data-content="<div class='d-flex align-items-center gap-0-50'><div class='circle-color' style='background-color: #000'></div>Preto</div>">opa</option>
+                                                    <option data-content="<div class='d-flex align-items-center gap-0-50'><div class='circle-color' style='background-color: red'></div>Vermelho</div>"></option>
+                                                    <option data-content="<div class='d-flex align-items-center gap-0-50'><div class='circle-color' style='background-color: gray'></div>Cinza</div>"></option>
+                                                    <option data-content="<div class='d-flex align-items-center gap-0-50'><div class='circle-color' style='background-color: green'></div>Verde</div>"></option>
+                                                    <option data-content="<div class='d-flex align-items-center gap-0-50'><div class='circle-color' style='background-color: orange'></div>Laranja</div>"></option>
+                                                </select>
                                             </div>
                                         </div>
                                     <div class="col-lg-6 col-12">

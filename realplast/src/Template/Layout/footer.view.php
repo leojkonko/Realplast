@@ -77,6 +77,9 @@
 <script src="<?= asset('js/vendors/jquery.mask.min.js') ?>"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<?php /* Adicionar no footer logo abaixo do bootstrap.bundle.min.js */ ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js" integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 <?php 
 /* Scripts opcionais
