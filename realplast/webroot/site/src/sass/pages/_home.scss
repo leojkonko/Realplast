@@ -626,11 +626,14 @@
 .produtos {
     background: #F0F0F0;
     padding: 20px 30px;
+    position: relative;
 
     & .mySwiper-produtos {
+        position: initial;
+
         & .swiper-slide {
             background: white;
-            position: relative;
+
 
             & .conteudo {
                 margin-top: 50px;
@@ -696,6 +699,7 @@
 
         & .swiper-pagination {
             --swiper-theme-color: #FF3C01;
+            bottom: -10px !important;
         }
     }
 }

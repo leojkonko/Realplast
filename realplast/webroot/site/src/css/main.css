@@ -1156,10 +1156,13 @@ header .div-input img {
 .produtos {
   background: #F0F0F0;
   padding: 20px 30px;
+  position: relative;
+}
+.produtos .mySwiper-produtos {
+  position: initial;
 }
 .produtos .mySwiper-produtos .swiper-slide {
   background: white;
-  position: relative;
 }
 .produtos .mySwiper-produtos .swiper-slide .conteudo {
   margin-top: 50px;
@@ -1215,6 +1218,7 @@ header .div-input img {
 }
 .produtos .mySwiper-produtos .swiper-pagination {
   --swiper-theme-color: #FF3C01;
+  bottom: -10px !important;
 }
 
 #produto {
