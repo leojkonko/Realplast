@@ -166,7 +166,7 @@
                 <div class="container">
                     <div class="div-input-offcanvas">
                         <div class="col-12 d-flex justify-content-center mt-4">
-                            <h2>Facilite a sua busca!</h2>
+                            <h2>Pesquise seu produto desejado</h2>
                         </div>
                         <input type="text" class="form-control mb-1 mt-4" placeholder="Busque por produtos">
                         <div class="col-12 d-flex justify-content-center mt-2">

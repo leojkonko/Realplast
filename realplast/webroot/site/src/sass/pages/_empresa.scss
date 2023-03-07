@@ -1,5 +1,5 @@
 #empresa {
-    background: #f0f0f0;
+    //background: #f0f0f0;
 
     // AJUSTE
     & .swiper {
@@ -12,13 +12,13 @@
         // FIM AJUSTE
 
         @media (min-width: 767px) and (max-width: 992px) {
-            margin-top: -100px;
+            //margin-top: -100px;
         }
 
         & .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background: #f0f0f0;
+            background: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,6 +64,10 @@
     }
 
     & .conteudo {
+        @media (max-width: 992px) {
+            margin-bottom: 80px;
+        }
+
         & .titulo {
             & h2 {
                 font-family: 'Inter';

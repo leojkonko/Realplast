@@ -17,7 +17,7 @@
                     class="col-lg-5 col-md-5 col-sm-6 col-xs-12 col-12 d-flex align-items-center justify-content-center">
                     <ul class="infos p-0">
                         <li>
-                            <a href="https://www.google.com.br/maps/place/Dustech+-+Ind%C3%BAstria+e+Com%C3%A9rcio+de+Tintas+em+P%C3%B3/@-29.2193736,-51.5208998,17z/data=!3m1!4b1!4m6!3m5!1s0x951c3df1e6285cc1:0xf17d3d08347c6bc5!8m2!3d-29.2193783!4d-51.5187111!16s%2Fg%2F11jj4bgnsf" target="_blank">
+                            <a href="https://www.google.com.br/maps/place/Realplast+Componentes+Pl%C3%A1sticos/@-29.1563468,-51.1958414,17z/data=!3m1!4b1!4m6!3m5!1s0x951ebd4caa78dbd3:0xff7fe17ae4689837!8m2!3d-29.1563516!4d-51.1913567!16s%2Fg%2F11hd6zltmz" target="_blank">
                                 <img src="<?= asset('/images/icones/localizacao.svg') ?>" alt="">
                             Av. Rosseti, 490 - Caxias do Sul - RS
                             </a>
@@ -60,7 +60,9 @@
                         <a href="">Política de privacidade</a>
                     </div>
                     <div class="col-lg-1 col-md-6 logo-ellite col-12">
-                        <img src="<?= asset('/images/logos/logo-ellite.svg') ?>" width="100" alt="">
+                        <a href="" class="w-100">
+                             <img src="<?= asset('/images/logos/logo-ellite.svg') ?>" width="100px" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -78,8 +80,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <?php /* Adicionar no footer logo abaixo do bootstrap.bundle.min.js */ ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js" integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 
 <?php 
 /* Scripts opcionais
@@ -90,6 +90,8 @@
 
 <script src="<?= asset('js/vendors/bootstrap.bundle.min.js') ?>"></script>
 <script src="<?= asset('js/main.js') ?>"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js" integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <?php
 /* ==== Arquivo para o pessoal do back end ==== 

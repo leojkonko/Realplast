@@ -52,6 +52,9 @@
                                 <p>Você deve aceitar o uso de cookies funcionais para enviar seu contato. <a href="#">Clique aqui para abrir as preferências de cookies</a></p>
                         </form>
                     </div>
+                            <div class="d-flex justify-content-center align-items-center pt-1">
+                                <button class="btn btn-custom-contato">Enviar</button>
+                            </div>
                 </div>
             </div>
         </div>

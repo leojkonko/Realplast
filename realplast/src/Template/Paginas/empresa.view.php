@@ -27,7 +27,7 @@
                 </div>
                 <!-- END SWIPER 1 POR 1 -->
 
-                <div class="col-lg-6 conteudo d-flex align-items-center py-4 py-sm-4 py-md-4 py-lg-0 py-xl-0 py-xxl-0">
+                <div class="col-lg-6 conteudo d-flex align-items-center py-2">
                     <div class="row">
                         <div class="col-12 p px-xl-4 px-lg-2 ">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nostrum velit nemo ea, ut, porro,

@@ -156,6 +156,10 @@
     height: 100px;
     border-radius: 3px;
     border: 1px solid #86A3B7;
+
+    &::placeholder {
+      color: #86A3B7;
+    }
   }
 
   & .row {
@@ -165,14 +169,41 @@
     & .input-group-text {
       background-color: white;
       color: #86A3B7;
+      border: 1px solid #86A3B7;
+      border-radius: 3px !important;
 
       @media(max-width:450px) {
         display: none;
       }
     }
 
+    & .select-custom {}
+
+    .bootstrap-select {
+      &:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 1%;
+        border: 1px solid #86A3B7;
+        border-left: 2px solid #86A3B7;
+        border-radius: 3px !important;
+      }
+
+      & button {
+        background-color: white !important;
+        color: #86A3B7;
+      }
+    }
+
     & .form-select {
       color: #86A3B7;
+      background-image: none;
+      padding: 0px;
+
+      & .dropdown-menu {
+        //
+        margin-top: -43px !important;
+        margin-left: 0px !important;
+        //
+      }
 
       & .circle-color {
         width: 1rem;

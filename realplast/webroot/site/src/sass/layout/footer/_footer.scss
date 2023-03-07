@@ -111,6 +111,19 @@
                     border-bottom: 1px solid #86A3B7;
                 }
             }
+
+            .logo-ellite {
+                & a {
+                    border: none;
+
+                    & img {
+                        &:hover {
+                            width: 110px;
+                            transition: width 0.2s ease-in-out;
+                        }
+                    }
+                }
+            }
         }
     }
 }

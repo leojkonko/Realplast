@@ -14,11 +14,13 @@
                                     <p>Conheça nossa linha de produtos de qualidade inigualável</p>
                                 </div>
                                 <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
-                                    <button class="btn btn-custom2">Saiba mais
-                                    <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                         <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
-                                    </svg>
-                                    </button>
+                                    <a href="<?= url('produtos') ?>">
+                                        <button class="btn btn-custom2">Saiba mais
+                                            <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-5 d-flex justify-content-center align-items-center imagem">
@@ -53,30 +55,38 @@
                     
                         <div class="swiper-slide ">
                             <div class="col-lg-4 w-100 button-linhas">
-                                <button class="w-100 b1">
-                                <img src="<?= asset('images/icones/corporativo.svg') ?>" class="me-1" width="35" alt="">    
-                                    <span>Corporativo</span></button>               
+                                <a href="<?= url('produtos') ?>">
+                                    <button class="w-100 b1">
+                                    <img src="<?= asset('images/icones/corporativo.svg') ?>" class="me-1" width="35" alt="">    
+                                    <span>Corporativo</span></button>
+                                </a>          
                             </div>
                         </div>
                         <div class="swiper-slide ">
                             <div class="col-lg-4 w-100 button-linhas">
-                                <button class="w-100 b2">
-                                <img src="<?= asset('images/icones/componentes.svg') ?>" class="me-1"  width="35" alt="">    
-                                    <span>Componentes</span></button>               
+                                <a href="<?= url('produtos') ?>">
+                                    <button class="w-100 b2">
+                                    <img src="<?= asset('images/icones/componentes.svg') ?>" class="me-1"  width="35" alt="">    
+                                        <span>Componentes</span></button>  
+                                </a>             
                             </div>
                         </div>
                         <div class="swiper-slide ">
                             <div class="col-lg-4 w-100 button-linhas">
-                                <button class="w-100 b3">
-                                <img src="<?= asset('images/icones/escolar.svg') ?>" class="me-1" width="60" alt="">    
-                                    <span>Escolar</span></button>               
+                                <a href="<?= url('produtos') ?>">
+                                    <button class="w-100 b3">
+                                    <img src="<?= asset('images/icones/escolar.svg') ?>" class="me-1" width="60" alt="">    
+                                    <span>Escolar</span></button>  
+                                </a>             
                             </div>
                         </div>
-                        <div class="swiper-slide ">
+                        <div class="swiper-slide ">                            
                             <div class="col-lg-4 w-100 button-linhas">
-                                <button class="w-100 b1">
-                                <img src="<?= asset('images/icones/corporativo.svg') ?>" class="me-1" width="35" alt="">    
-                                    <span>Teste4</span></button>               
+                                <a href="<?= url('produtos') ?>">
+                                    <button class="w-100 b1">
+                                    <img src="<?= asset('images/icones/corporativo.svg') ?>" class="me-1" width="35" alt="">    
+                                    <span>Teste4</span></button> 
+                                </a>              
                             </div>
                         </div>
                    
@@ -101,11 +111,13 @@
                     <p>Conheça a nossa linha completa de produtos para o setor corporativo</p>
                 </div>
                 <div class="d-flex justify-content-start align-items-center">
-                    <button class="btn btn-custom2">Linha completa
-                    <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
-                    </svg>
-                    </button>
+                    <a href="<?= url('produtos') ?>">
+                        <button class="btn btn-custom2">Linha completa
+                        <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
+                        </svg>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -116,23 +128,27 @@
             <div class="swiper mySwiper-produtos">
                     <div class="swiper-wrapper">
                     <?php foreach(range(0,9) as $i) : ?>
+                        <a href="<?= url('produtos') ?>">
                         <div class="swiper-slide">
                             <div class="col-12 conteudo">
                                 <div class="d-flex justify-content-center">
                                     <h2>Big</h2>
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <a href="">Ver mais 
+                                    <a href="" class="position">Ver mais 
                                     <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                          <path d="M1 13L7 7L1 1" stroke="#FF3C01" stroke-width="1.5"/>
                                     </svg>
                                     </a>
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <img src="<?= asset('images/banners/cadeira-pequena.svg') ?>" alt="">
+                                    <a href="<?= url('produtos') ?>">
+                                        <img src="<?= asset('images/banners/cadeira-pequena.svg') ?>" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </a>    
                         <?php endforeach; ?>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -151,11 +167,13 @@
                     <p>Conheça a nossa linha completa de produtos para o setor corporativo</p>
                 </div>
                 <div class="d-flex justify-content-start align-items-center">
-                    <button class="btn btn-custom2">Linha completa
-                    <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 9L5 5L1 1" stroke="#253E4F" stroke-width="2"/>
-                    </svg>
-                    </button>
+                    <a href="<?= url('produtos') ?>">
+                        <button class="btn btn-custom2">Linha completa
+                            <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 9L5 5L1 1" stroke="#253E4F" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-4 d-flex justify-content-center align-items-center">
@@ -175,14 +193,16 @@
                                     <h2>Big</h2>
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <a href="">Ver mais 
-                                    <svg width="" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                         <path d="M1 13L7 7L1 1" stroke="#FF3C01" stroke-width="1.5"/>
-                                    </svg>
+                                    <a href="<?= url('produtos') ?>" class="position">Ver mais 
+                                        <svg width="" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 13L7 7L1 1" stroke="#FF3C01" stroke-width="1.5"/>
+                                        </svg>
                                     </a>
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <img src="<?= asset('images/banners/cadeira-pequena.svg') ?>" alt="">
+                                     <a href="<?= url('produtos') ?>">
+                                         <img src="<?= asset('images/banners/cadeira-pequena.svg') ?>" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -272,7 +292,7 @@
                                                 cols="30" rows="10"></textarea>
                                             <div id="charCount"></div>
                                         </div>
-                                        <div class="input-group mt-1">
+                                        <div class="input-group mt-1 select-custom">
                                             <span class="input-group-text" id="basic-addon1">Cor Desejada</span>
 <!--
 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
@@ -283,7 +303,7 @@
 Opção 3</option>
 <option value="4">Opção 4</option>
 </select> --> 
-                                                <select class="selectpicker position-relative form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <select class="selectpicker position-relative input-group form-select" id="floatingSelect" aria-label="Floating label select example">
                                                     <option data-content="<div class='d-flex align-items-center gap-0-50'><div class='circle-color' style='background-color: #000'></div>Preto</div>">opa</option>
                                                     <option data-content="<div class='d-flex align-items-center gap-0-50'><div class='circle-color' style='background-color: red'></div>Vermelho</div>"></option>
                                                     <option data-content="<div class='d-flex align-items-center gap-0-50'><div class='circle-color' style='background-color: gray'></div>Cinza</div>"></option>
@@ -302,7 +322,7 @@ Opção 3</option>
                                         <div class="d-flex">
                                         <input type="checkbox" class="me-1">
 
-                                            <h6>Li e aceito os termos da <span>Política de Privacidade</span> da RealPlast</h6>
+                                            <h6 class="mt-0-50">Li e aceito os termos da <span>Política de Privacidade</span> da RealPlast</h6>
                                         </div>
                                         <button class="btn btn-custom2">Enviar</button>
                                     </div>

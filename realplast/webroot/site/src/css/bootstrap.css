@@ -3120,7 +3120,7 @@ textarea.form-control-lg {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   clear: both;
   font-weight: 400;
   color: #212529;
@@ -3979,6 +3979,9 @@ header .accordion-body ul li button {
   border-radius: 3px;
   border: 1px solid #86A3B7;
 }
+.modal-body textarea::placeholder {
+  color: #86A3B7;
+}
 .modal-body .row {
   background-image: none !important;
   color: #86A3B7;
@@ -3986,14 +3989,32 @@ header .accordion-body ul li button {
 .modal-body .row .input-group-text {
   background-color: white;
   color: #86A3B7;
+  border: 1px solid #86A3B7;
+  border-radius: 3px !important;
 }
 @media (max-width: 450px) {
   .modal-body .row .input-group-text {
     display: none;
   }
 }
+.modal-body .row .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 1%;
+  border: 1px solid #86A3B7;
+  border-left: 2px solid #86A3B7;
+  border-radius: 3px !important;
+}
+.modal-body .row .bootstrap-select button {
+  background-color: white !important;
+  color: #86A3B7;
+}
 .modal-body .row .form-select {
   color: #86A3B7;
+  background-image: none;
+  padding: 0px;
+}
+.modal-body .row .form-select .dropdown-menu {
+  margin-top: -43px !important;
+  margin-left: 0px !important;
 }
 .modal-body .row .form-select .circle-color {
   width: 1rem;
@@ -4501,7 +4522,7 @@ header .accordion-body ul li button {
 }
 .offcanvas-end .div-input-offcanvas h2, .offcanvas-end .div-input-offcanvas .h2 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 34px;
   text-align: center;
 }
 .offcanvas-end .div-input-offcanvas .lupa {

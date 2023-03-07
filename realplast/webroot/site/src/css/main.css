@@ -538,6 +538,13 @@ header .div-input img {
   color: #86A3B7;
   border-bottom: 1px solid #86A3B7;
 }
+.footer .linha .copyright .logo-ellite a {
+  border: none;
+}
+.footer .linha .copyright .logo-ellite a img:hover {
+  width: 110px;
+  transition: width 0.2s ease-in-out;
+}
 
 @media (max-width: 575.98px) {
   .footer {
@@ -797,6 +804,11 @@ header .div-input img {
 @media (max-width: 767px) {
   .banner-buttons .mySwiper-buttons .swiper-slide .button-linhas button img {
     width: 20px !important;
+  }
+}
+@media (max-width: 380px) {
+  .banner-buttons .mySwiper-buttons .swiper-slide .button-linhas button img {
+    margin-right: 0px;
   }
 }
 .banner-buttons .mySwiper-buttons .swiper-slide .button-linhas .b1 {
@@ -1174,11 +1186,15 @@ header .div-input img {
   font-weight: 700;
   font-size: 28px;
   line-height: 135%;
+  color: #253E4F;
 }
 @media (max-width: 1600px) {
   .produtos .mySwiper-produtos .swiper-slide .conteudo h2 {
     font-size: 24px;
   }
+}
+.produtos .mySwiper-produtos .swiper-slide .conteudo .position {
+  z-index: 10;
 }
 .produtos .mySwiper-produtos .swiper-slide .conteudo a {
   font-weight: 400;
@@ -1224,24 +1240,16 @@ header .div-input img {
   bottom: -10px !important;
 }
 
-#empresa {
-  background: #f0f0f0;
-}
 #empresa .swiper {
   width: 100%;
 }
 #empresa .swiper .swiper-wrapper {
   position: absolute;
 }
-@media (min-width: 767px) and (max-width: 992px) {
-  #empresa .swiper {
-    margin-top: -100px;
-  }
-}
 #empresa .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #f0f0f0;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1275,6 +1283,11 @@ header .div-input img {
 }
 #empresa .swiper .swiper-pagination-bullet {
   background: #3d2c2c;
+}
+@media (max-width: 992px) {
+  #empresa .conteudo {
+    margin-bottom: 80px;
+  }
 }
 #empresa .conteudo .titulo h2 {
   font-family: "Inter";
@@ -1494,6 +1507,14 @@ header .div-input img {
   .contato .form form textarea {
     font-size: 16px;
   }
+}
+.contato .form .btn-custom-contato {
+  background: linear-gradient(90deg, #FF3C01 0%, #FF6A00 100%);
+  border: none;
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 46px;
+  color: white;
 }
 
 #produto {
