@@ -98,7 +98,7 @@
         </div>
     </section>
 
-    <section class="areas">
+    <section class="areas d-block">
         <div class="row">
             <div class="col-lg-8 d-flex justify-content-center align-items-center">
                 
