@@ -842,48 +842,77 @@ header .div-input img {
   transition: background-size 0.5s ease-in-out;
 }
 .areas .row {
-  background-image: url(../../../../../webroot/site/src/images/backgrounds/cadeira.svg);
-  background-repeat: no-repeat;
-  background-position-x: 0px !important;
+  /* background-image: url(../../../../../webroot/site/src/images/backgrounds/cadeira.svg);
+          background-repeat: no-repeat;
+          background-position-x: 0px !important;
+  */
   overflow: hidden;
   margin: 0px;
+  /* @media (min-width: 992px)and(max-width: 2000px) {
+      background-position-y: 20px !important;
+  }
+
+  @media (min-width: 1100px)and(max-width: 1200px) {
+      background-position-x: -220%;
+  }
+
+  @media (min-width: 992px)and(max-width: 1100px) {
+      background-position-x: -280%;
+  }
+
+  @media (max-width: 992px) {
+      background-size: 70%;
+      background-position-y: 120%;
+  }
+
+  @media (max-width: 767px) {
+      background-size: 80%;
+      background-position-y: 100%;
+  }
+
+  @media (max-width: 450px) {
+      background-size: 100%;
+      background-position-y: 100%;
+  }*/
+  position: relative;
 }
-@media (min-width: 992px) and (max-width: 2000px) {
-  .areas .row {
-    background-position-y: 20px !important;
+.areas .row .img img {
+  width: 50%;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 0;
+}
+@media (max-width: 1900px) {
+  .areas .row .img img {
+    width: 54%;
   }
 }
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .areas .row {
-    background-position-x: -220%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1100px) {
-  .areas .row {
-    background-position-x: -280%;
-  }
-}
-@media (max-width: 992px) {
-  .areas .row {
-    background-size: 70%;
-    background-position-y: 120%;
+@media (max-width: 1600px) {
+  .areas .row .img img {
+    width: 60%;
   }
 }
 @media (max-width: 767px) {
-  .areas .row {
-    background-size: 80%;
-    background-position-y: 100%;
+  .areas .row .img img {
+    width: 80%;
   }
 }
-@media (max-width: 450px) {
-  .areas .row {
-    background-size: 100%;
-    background-position-y: 100%;
+@media (max-width: 576px) {
+  .areas .row .img img {
+    width: 100%;
   }
+}
+.areas .row:hover .img img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
 }
 .areas .row .conteudo {
   padding: 90px 0px;
   color: white;
+  z-index: 1;
 }
 @media (max-width: 992px) {
   .areas .row .conteudo div {
@@ -990,20 +1019,55 @@ header .div-input img {
   }
 }
 .areas2 .row {
-  background-image: url(../../../../../webroot/site/src/images/backgrounds/componentes.svg);
+  /* background-image: url(../../../../../webroot/site/src/images/backgrounds/componentes.svg);
   background-repeat: no-repeat;
-  background-position-x: 80%;
+  background-position-x: 80%;*/
   overflow: hidden;
   margin: 0px;
+  /* @media (max-width: 992px) {
+      background-position-x: 50%;
+      //background-size: 200%;
+  }*/
+  position: relative;
 }
-@media (max-width: 992px) {
-  .areas2 .row {
-    background-position-x: 50%;
+.areas2 .row .img img {
+  width: 50%;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 0;
+  size: cover;
+  /*@media (max-width: 450px) {
+      width: 100% !important;
+      //bottom: 0px !important;
+  }*/
+}
+@media (max-width: 1900px) {
+  .areas2 .row .img img {
+    width: 60%;
   }
+}
+@media (max-width: 1600px) {
+  .areas2 .row .img img {
+    width: 64%;
+  }
+}
+@media (max-width: 1400px) {
+  .areas2 .row .img img {
+    width: 70%;
+    bottom: 0px !important;
+  }
+}
+.areas2 .row:hover .img img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
 }
 .areas2 .row .conteudo {
   padding: 90px 0px;
   color: white;
+  z-index: 1;
 }
 @media (max-width: 992px) {
   .areas2 .row .conteudo div {
@@ -1082,18 +1146,56 @@ header .div-input img {
   transition: background-size 0.5s ease-in-out;
 }
 .areas4 .row {
-  background-image: url(../../../../../webroot/site/src/images/backgrounds/cadeiras.svg);
+  /*background-image: url(../../../../../webroot/site/src/images/backgrounds/cadeiras.svg);
   background-repeat: no-repeat;
   background-position-x: 100%;
+  */
   overflow: hidden;
   margin: 0px;
+  /*@media (max-width: 992px) {
+      background-position-x: 50%;
+      //background-size: 200%;
+  }*/
+  position: relative;
 }
-@media (max-width: 992px) {
-  .areas4 .row {
-    background-position-x: 50%;
+.areas4 .row .img {
+  margin-left: -11px;
+}
+.areas4 .row .img img {
+  width: 50%;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 0;
+}
+@media (max-width: 1900px) {
+  .areas4 .row .img img {
+    width: 54%;
   }
 }
+@media (max-width: 1600px) {
+  .areas4 .row .img img {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .areas4 .row .img img {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .areas4 .row .img img {
+    width: 100%;
+  }
+}
+.areas4 .row:hover .img img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
 .areas4 .row .conteudo {
+  z-index: 1;
   padding: 90px 0px;
   color: #253E4F;
 }

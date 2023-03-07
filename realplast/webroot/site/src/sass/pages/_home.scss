@@ -241,14 +241,14 @@
     //position: relative;
 
     & .row {
-        background-image: url(../../../../../webroot/site/src/images/backgrounds/cadeira.svg);
+        /* background-image: url(../../../../../webroot/site/src/images/backgrounds/cadeira.svg);
         background-repeat: no-repeat;
         background-position-x: 0px !important;
-
+*/
         overflow: hidden;
         margin: 0px;
 
-        @media (min-width: 992px)and(max-width: 2000px) {
+        /* @media (min-width: 992px)and(max-width: 2000px) {
             background-position-y: 20px !important;
         }
 
@@ -273,14 +273,55 @@
         @media (max-width: 450px) {
             background-size: 100%;
             background-position-y: 100%;
+        }*/
+        position: relative;
+
+        & .img {
+            // margin-left: -11px;
+
+            & img {
+                width: 50%;
+                transition: transform 0.3s ease-in-out;
+                transform: scale(1.0);
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                z-index: 0;
+
+                @media (max-width: 1900px) {
+                    width: 54%;
+                }
+
+                @media (max-width: 1600px) {
+                    width: 60%;
+                }
+
+                @media (max-width: 767px) {
+                    width: 80%;
+                }
+
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+            }
         }
 
+        &:hover {
+            & .img {
 
+                & img {
+                    transform: scale(1.03);
+                    transition: transform 0.3s ease-in-out;
+                }
+            }
+
+        }
 
         //background-position: ;
         & .conteudo {
             padding: 90px 0px;
             color: white;
+            z-index: 1;
 
             & div {
                 @media (max-width: 992px) {
@@ -406,16 +447,62 @@
     }
 
     & .row {
-        background-image: url(../../../../../webroot/site/src/images/backgrounds/componentes.svg);
+        /* background-image: url(../../../../../webroot/site/src/images/backgrounds/componentes.svg);
         background-repeat: no-repeat;
-        background-position-x: 80%;
+        background-position-x: 80%;*/
         overflow: hidden;
         margin: 0px;
 
-        @media (max-width: 992px) {
+        /* @media (max-width: 992px) {
             background-position-x: 50%;
             //background-size: 200%;
+        }*/
+        position: relative;
+
+        & .img {
+            //margin-left: -11px;
+
+            & img {
+                width: 50%;
+                transition: transform 0.3s ease-in-out;
+                transform: scale(1.0);
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                z-index: 0;
+                size: cover;
+
+                @media (max-width: 1900px) {
+                    width: 60%;
+                }
+
+                @media (max-width: 1600px) {
+                    width: 64%;
+                }
+
+                @media (max-width: 1400px) {
+                    width: 70%;
+                    bottom: 0px !important;
+                }
+
+                /*@media (max-width: 450px) {
+                    width: 100% !important;
+                    //bottom: 0px !important;
+                }*/
+            }
         }
+
+        &:hover {
+            & .img {
+
+                & img {
+                    transform: scale(1.03);
+                    transition: transform 0.3s ease-in-out;
+                }
+            }
+
+        }
+
 
 
 
@@ -423,6 +510,7 @@
         & .conteudo {
             padding: 90px 0px;
             color: white;
+            z-index: 1;
 
             & div {
                 @media (max-width: 992px) {
@@ -520,21 +608,65 @@
     transition: background-size 0.5s ease-in-out;
 
     & .row {
-        background-image: url(../../../../../webroot/site/src/images/backgrounds/cadeiras.svg);
+        /*background-image: url(../../../../../webroot/site/src/images/backgrounds/cadeiras.svg);
         background-repeat: no-repeat;
         background-position-x: 100%;
+        */
         overflow: hidden;
         margin: 0px;
 
-        @media (max-width: 992px) {
+        /*@media (max-width: 992px) {
             background-position-x: 50%;
             //background-size: 200%;
+        }*/
+        position: relative;
+
+        & .img {
+            margin-left: -11px;
+
+            & img {
+                width: 50%;
+                transition: transform 0.3s ease-in-out;
+                transform: scale(1.0);
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                z-index: 0;
+
+                @media (max-width: 1900px) {
+                    width: 54%;
+                }
+
+                @media (max-width: 1600px) {
+                    width: 60%;
+                }
+
+                @media (max-width: 767px) {
+                    width: 80%;
+                }
+
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &:hover {
+            & .img {
+
+                & img {
+                    transform: scale(1.03);
+                    transition: transform 0.3s ease-in-out;
+                }
+            }
+
         }
 
 
 
         //background-position: ;
         & .conteudo {
+            z-index: 1;
             padding: 90px 0px;
             color: #253E4F;
 

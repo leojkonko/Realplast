@@ -100,8 +100,8 @@
 
     <section class="areas d-block">
         <div class="row">
-            <div class="col-lg-8 d-flex justify-content-center align-items-center">
-                
+            <div class="col-lg-8 d-flex justify-content-start align-items-center img">
+                <img src="<?= asset('images/backgrounds/cadeira.svg') ?>" alt="">
             </div>
             <div class="col-lg-4 col-12 conteudo">
                 <div class="d-flex justify-content-start align-items-center">
@@ -176,8 +176,8 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                
+            <div class="col-lg-4 d-flex justify-content-start align-items-center img">
+                <img src="<?= asset('images/backgrounds/componentes.svg') ?>" alt="">
             </div>
         </div>
     </section>
@@ -214,29 +214,29 @@
         </div>
     </section>
     <section class="areas2 areas3">
-        
-            <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-12 conteudo">
-                    <div class="d-flex justify-content-start align-items-center">
-                        <h2>Corporativo</h2>
-                    </div>
-                    <div class="d-flex justify-content-start align-items-center">
-                        <p>Conheça a nossa linha completa de produtos para o setor corporativo</p>
-                    </div>
-                    <div class="d-flex justify-content-start align-items-center">
-                        <button class="btn btn-custom2">Linha completa
-                        <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 9L5 5L1 1" stroke="#253E4F" stroke-width="2"/>
-                        </svg>
-                        </button>
-                        
-                    </div>
+    <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-12 conteudo">
+                <div class="d-flex justify-content-start align-items-center">
+                    <h2>Corporativo</h2>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                    
+                <div class="d-flex justify-content-start align-items-center">
+                    <p>Conheça a nossa linha completa de produtos para o setor corporativo</p>
+                </div>
+                <div class="d-flex justify-content-start align-items-center">
+                    <a href="<?= url('produtos') ?>">
+                        <button class="btn btn-custom2">Linha completa
+                            <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 9L5 5L1 1" stroke="#253E4F" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </a>
                 </div>
             </div>
+            <div class="col-lg-4 d-flex justify-content-start align-items-center img">
+                <img src="<?= asset('images/backgrounds/componentes.svg') ?>" alt="">
+            </div>
+        </div>
             <div class="em-breve"></div>
     </section>
     <section class="areas4">
@@ -257,8 +257,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                    
+                <div class="col-lg-4 d-flex justify-content-start align-items-center img">
+                    <img src="<?= asset('images/backgrounds/cadeiras.svg') ?>" alt="">
                 </div>
             </div>
                 <!-- Modal -->
