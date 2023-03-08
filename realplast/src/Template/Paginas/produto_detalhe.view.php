@@ -1,8 +1,8 @@
 <main id="produto">
     <section class="produto-detalhe">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row produto">
+                <div class="col-lg-6 p-0">
                     <!-- Swiper -->
                         <div class="swiper mySwiper-produto-detalhe">
                             <div class="swiper-wrapper">
@@ -54,10 +54,10 @@
                     </div>
                     <div class="d-flex justify-content-center align-items-center pt-2">
                         <button>Orçar agora
-                            <svg width="41" height="" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="36" height="36" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <path d="M3.77252 3.82L8.2916 6.976C8.7313 7.288 9.28092 7.288 9.72061 6.976L14.2397 3.82M1 2.452V11.548C1 12.352 1.57405 13 2.29466 13H15.7053C16.4137 13 17 12.352 17 11.548V2.452C17 1.648 16.426 1 15.7053 1H2.29466C1.57405 1 1 1.648 1 2.452Z" stroke="#FF6A00" stroke-width="1.5" stroke-miterlimit="10"/>
                             </svg>
-                            <svg width="38" height="" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="36" height="36" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6695 2.32533C12.165 0.826667 10.1647 0.000666667 8.03383 0C3.64279 0 0.0689973 3.556 0.0669877 7.928C0.0663178 9.32533 0.43341 10.6893 1.13075 11.892L0 16L4.2229 14.8973C5.38648 15.5293 6.69675 15.862 8.02981 15.8627H8.03316C12.4235 15.8627 15.998 12.306 16 7.934C16.0013 5.816 15.1734 3.82333 13.6695 2.32533ZM8.03383 14.5233H8.03115C6.84279 14.5233 5.67787 14.2053 4.661 13.6047L4.41917 13.462L1.91317 14.116L2.58237 11.684L2.42495 11.4347C1.76178 10.3853 1.4121 9.17267 1.41277 7.928C1.41411 4.29467 4.38501 1.33867 8.03718 1.33867C9.80565 1.33867 11.4683 2.02533 12.7183 3.27067C13.9683 4.51667 14.6562 6.172 14.6556 7.93267C14.6535 11.5673 11.6833 14.5233 8.03383 14.5233ZM11.6659 9.588C11.4669 9.48867 10.4883 9.00933 10.3054 8.94333C10.1232 8.87733 9.99054 8.844 9.85723 9.042C9.72393 9.24 9.34344 9.68667 9.22688 9.81933C9.11099 9.95133 8.99443 9.968 8.79548 9.86867C8.59653 9.76933 7.95478 9.56067 7.19447 8.88533C6.60297 8.36 6.20306 7.71133 6.08717 7.51267C5.97128 7.314 6.07511 7.20733 6.17425 7.10867C6.26401 7.02 6.3732 6.87733 6.47302 6.76133C6.5735 6.64667 6.60632 6.564 6.67331 6.43133C6.73963 6.29933 6.7068 6.18333 6.65656 6.084C6.60632 5.98533 6.20841 5.01 6.04295 4.61333C5.88152 4.22667 5.7174 4.27933 5.59481 4.27333C5.47892 4.26733 5.34628 4.26667 5.21298 4.26667C5.08034 4.26667 4.86464 4.316 4.68244 4.51467C4.50023 4.71333 3.98576 5.19267 3.98576 6.16733C3.98576 7.14267 4.69918 8.08467 4.79833 8.21667C4.89747 8.34867 6.20172 10.35 8.19862 11.208C8.67356 11.412 9.04467 11.534 9.33339 11.6253C9.81034 11.776 10.2444 11.7547 10.5874 11.704C10.9699 11.6473 11.765 11.2247 11.9312 10.762C12.0973 10.2993 12.0973 9.902 12.0471 9.82C11.9975 9.73667 11.8649 9.68733 11.6659 9.588Z" fill="#FF6A00"/>
                             </svg>
 
@@ -86,11 +86,11 @@
                         <p>Caixas com <span>10 kits</span> Assento + Encosto </p>
                     </div>
                 </div>
-                <div class="col-lg-12 conteudo-opcoes py-lg-3 py-2">
+                <div class="col-lg-12 conteudo-opcoes py-lg-3 py-2 p-0 overflow-hidden">
                     <hr>
                         <div class="row">
                             <div class="col-lg-3 cont col-md-6 d-flex justify-content-center">
-                                <h6>Produto personalizável</h6>
+                                <h6 class="prod">Produto personalizável</h6>
                             </div>
                             <div class="col-lg-3 cont col-md-6 d-flex justify-content-center">
                                 <svg width="36"  height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +119,7 @@
     <section class="kits py-lg-4 py-2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12 p-sm-0">
                     <div class="d-flex justify-content-start align-items-center">
                         <h6>Kit composto por Assento e Encosto injetado em Polipropileno (PP) de alta resistência. 
                             Assento com curva anatômica que facilita a circulação sanguínea e orifícios laterais para fixação de estofados. 
@@ -129,7 +129,7 @@
                         <p class="pt-2"> Referência do kit: <span>2051</span></p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 d-flex justify-content-center conteudo-kit">
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center conteudo-kit p-sm-0">
                     <div class="flex-column">
                         <p class="ps-2">Conteúdo do kit:</p>
                         <ul class="pt-2">
@@ -152,21 +152,21 @@
                 <div class="col-lg-12 div-detalhes">
                     <div class="row">
                         <div class="col-lg-4 col-12 d-flex justify-content-center py-lg-4 py-2">
-                            <div class="flex-column">
+                            <div class="flex-column conteudo">
                                 <h2>Encosto</h2>
                                 <p>Cód: 805100</p>
                                 <img class="mt-2" src="<?= asset('images/banners/detalhes-tec.png') ?>" alt="">
                             </div>
                         </div>
                         <div class="col-lg-4 col-12 d-flex justify-content-center py-lg-4 py-2">
-                            <div class="flex-column">
+                            <div class="flex-column conteudo">
                                 <h2>Encosto</h2>
                                 <p>Cód: 805100</p>
                                 <img class="mt-2" src="<?= asset('images/banners/detalhes-tec2.png') ?>" alt="">
                             </div>
                         </div>
                         <div class="col-lg-4 col-12 d-flex justify-content-center py-lg-4 py-2">
-                            <div class="flex-column">
+                            <div class="flex-column conteudo">
                                 <h2>Encosto</h2>
                                 <p>Cód: 805100</p>
                                 <img class="mt-2" src="<?= asset('images/banners/detalhes-tec3.png') ?>" alt="">
@@ -182,12 +182,11 @@
     <section class="relacionados py-lg-4 py-2">
     <div class="container">
                  <div class="row">
-                    <div class="col-lg-12 div-titulo py-2">
+                    <div class="col-lg-12 div-titulo py-2 ps-0">
                         <h2>Produtos Relacionados</h2>
                     </div>
         <!-- Swiper -->
         <div class="swiper mySwiper-relacionados">
-
                     <div class="swiper-wrapper">
                         <?php foreach(range(0,9) as $i) : ?>
                             <div class="swiper-slide">

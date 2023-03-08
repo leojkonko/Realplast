@@ -10,7 +10,16 @@
     <meta name="author" content="Agência Ellite Digital">
 
     <?php /* ==== Favicons ==== */ ?>
-    <link rel="apple-touch-icon" sizes="57x57" href="<?= asset('images/favicons/apple-icon-57x57.png') ?>">
+    <!--<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?= asset('images/favicons/favicon.ico') ?>">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">-->
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon.ico') ?>">
+    <!--<link rel="apple-touch-icon" sizes="57x57" href="<?= asset('images/favicons/favicon.ico') ?>">
     <link rel="apple-touch-icon" sizes="60x60" href="<?= asset('images/favicons/apple-icon-60x60.png') ?>">
     <link rel="apple-touch-icon" sizes="72x72" href="<?= asset('images/favicons/apple-icon-72x72.png') ?>">
     <link rel="apple-touch-icon" sizes="76x76" href="<?= asset('images/favicons/apple-icon-76x76.png') ?>">
@@ -22,13 +31,14 @@
     <link rel="icon" type="image/png" sizes="192x192" href="<?= asset('images/favicons/android-icon-192x192.png') ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= asset('images/favicons/favicon-32x32.png') ?>">
     <link rel="icon" type="image/png" sizes="96x96" href="<?= asset('images/favicons/favicon-96x96.png') ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon-16x16.png') ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon-16x16.png') ?>">-->
     <link rel="manifest" href="<?= asset('images/favicons/manifest.json') ?>">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?= asset('images/favicons/ms-icon-144x144.png') ?>">
     <meta name="theme-color" content="#ffffff">
 
-    <title><?= !empty($title) ? $title . " | Projeto Padrão" : "Projeto Padrão" ?></title>
+<!--<title><?= !empty($title) ? $title . " | Realplast" : "Realplast" ?></title>-->
+<title>Realplast</title>
 
     <?php /* ==== Stylesheets ==== */ ?>
     <link rel="stylesheet" href="<?= asset('css/bootstrap.css') ?>"> <?php /* ==== Arquivo do bootstrap ==== */ ?>
@@ -189,9 +199,7 @@
     <?php /* Remover essa primeira condicional */ ?>
         <?php if ($pagina_atual === "home") : ?>
             <?= $header ?>
-        <?php else : ?>
             <div class="header-wrapper">
-                <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class="breadcrumb-wrapper">
                         <div class="container">
@@ -199,7 +207,7 @@
                                 <div class="col-lg-6 col-6 d-flex justify-content-start">
                                     <h2>Corporativo</h2>
                                 </div>
-                                <div class="col-lg-6 col-6 d-flex justify-content-end mt-lg-3 mt-sm-2 links">
+                                <div class="col-lg-6 col-6 d-flex justify-content-end mt-lg-2 mt-sm-2 links">
                                     <a href="" class="p1">Home</a>
                                         <svg width="6" height="10" class="mt-0-50 mx-0-50" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M1 1L5 5L1 9" stroke="#253E4F" stroke-width="1.3" stroke-miterlimit="10" stroke-linejoin="round"/>
@@ -211,4 +219,102 @@
                     </section>
                 <?php endif; ?>
             </div>
+        <?php endif; ?>
+
+        <?php if ($pagina_atual === "empresa") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-6 d-flex justify-content-start">
+                                    <h2>Sobre nós</h2>
+                                </div>
+                                <div class="col-lg-6 col-6 d-flex justify-content-end mt-lg-2 mt-sm-2 links">
+                                    <a href="" class="p1">Home</a>
+                                        <svg width="6" height="10" class="mt-0-50 mx-0-50" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1L5 5L1 9" stroke="#253E4F" stroke-width="1.3" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                        </svg>
+                                    <a href="" class="p2">Sobre nós</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        <?php endif; ?>
+        <?php endif; ?>
+        <?php if ($pagina_atual === "produtos") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-6 d-flex justify-content-start">
+                                    <h2>Corporativo</h2>
+                                </div>
+                                <div class="col-lg-6 col-6 d-flex justify-content-end mt-lg-2 mt-sm-2 links">
+                                    <a href="" class="p1">Home</a>
+                                        <svg width="6" height="10" class="mt-0-50 mx-0-50" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1L5 5L1 9" stroke="#253E4F" stroke-width="1.3" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                        </svg>
+                                    <a href="" class="p2">Produtos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        <?php endif; ?>
+        <?php endif; ?>
+        <?php if ($pagina_atual === "produto_detalhe") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-6 d-flex justify-content-start">
+                                    <h2>Atuali</h2>
+                                </div>
+                                <div class="col-lg-6 col-6 d-flex justify-content-end mt-lg-2 mt-sm-2 links">
+                                    <a href="" class="p1">Home</a>
+                                        <svg width="6" height="10" class="mt-0-50 mx-0-50" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1L5 5L1 9" stroke="#253E4F" stroke-width="1.3" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                        </svg>
+                                    <a href="" class="p2">Corporativo</a>
+                                    <svg width="6" height="10" class="mt-0-50 mx-0-50" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1L5 5L1 9" stroke="#253E4F" stroke-width="1.3" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    </svg>
+                                    <a href="" class="p2">Atuali</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        <?php endif; ?>
+        <?php endif; ?>
+
+        <?php if ($pagina_atual === "contato") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-6 d-flex justify-content-start">
+                                    <h2>Contato</h2>
+                                </div>
+                                <div class="col-lg-6 col-6 d-flex justify-content-end mt-lg-2 mt-sm-2 links">
+                                    <a href="" class="p1">Home</a>
+                                        <svg width="6" height="10" class="mt-0-50 mx-0-50" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1L5 5L1 9" stroke="#253E4F" stroke-width="1.3" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                        </svg>
+                                    <a href="" class="p2">Contato</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        <?php endif; ?>
         <?php endif; ?>

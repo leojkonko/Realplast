@@ -4,7 +4,7 @@
 }
 
 .produto-detalhe {
-    & .row {
+    & .produto {
         background-color: white;
         margin-top: 40px;
         border-radius: 2px;
@@ -120,35 +120,43 @@
 
     & .conteudo-opcoes {
         & hr {
-            width: 95%;
-            margin: auto;
+            width: 110%;
+            //margin: auto;
         }
 
         color: #253E4F;
 
 
         & .cont {
+            @media (min-width: 992px) {
+                padding-top: 40px;
+            }
+
             @media (max-width: 992px) {
                 padding-top: 20px;
-
-                & svg {
-                    //width: 15px !important;
-                }
             }
 
             & h6 {
                 font-weight: 400;
-                font-size: 22px;
+                font-size: 20px;
                 line-height: 135%;
+
+                @media (max-width: 1600px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 992px) {
+                    font-size: 18px;
+                }
 
                 & span {
                     font-weight: 900;
                 }
+            }
 
-                &:hover {
-                    font-weight: 900;
-                    color: #FF3C01;
-                }
+            & .prod {
+                font-weight: 900;
+                color: #FF3C01;
             }
         }
     }
@@ -162,8 +170,8 @@
         font-size: 20px;
         line-height: 135%;
 
-        @media(max-width: 1400px) {
-            font-size: 20px;
+        @media(max-width: 1600px) {
+            font-size: 18px;
         }
 
         @media(max-width: 992px) {
@@ -236,11 +244,16 @@
             line-height: 24px;
             color: #FFFFFF;
             padding: 25px;
+            margin-bottom: 0px;
         }
     }
 
     & .div-detalhes {
         background: white;
+
+        & .conteudo {
+            text-align: center;
+        }
 
         & h2 {
             font-weight: 700;
@@ -265,6 +278,11 @@
             }
         }
 
+        & img {
+            width: 80%;
+            margin-left: 10px;
+        }
+
         /*@media (min-width:992px)and(max-width: 1200px) {
             & img {
                 margin: 0px 20px;
@@ -280,6 +298,13 @@
             font-weight: 700;
             font-size: 32px;
             line-height: 39px;
+            color: #253E4F;
+            margin-bottom: 0px;
+
+            @media(max-width:767px) {
+                text-align: center;
+            }
+
         }
     }
 

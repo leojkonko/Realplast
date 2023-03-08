@@ -297,13 +297,14 @@ header {
 }
 
 .breadcrumb-wrapper {
-    padding: 100px 0px;
+    padding: 90px 0px;
+    border-bottom: 1px solid #f0f0f0;
 
     @media (max-width: 992px) {
         padding: 50px 0px;
     }
 
-    background-image: url(../../../../../webroot/site/src/images/backgrounds/x-header.svg);
+    background-image: url(../images/backgrounds/x-header.svg);
     background-repeat: no-repeat;
     background-position-x: 50%;
 

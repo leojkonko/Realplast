@@ -13,7 +13,7 @@
                             <div class="d-flex justify-content-start align-items-center">
                                 <ul>
                                     <?php foreach(range(0,6) as $i) : ?>
-                                        <li>item1</li>
+                                        <li><a href="">item1</a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </div>    
@@ -27,9 +27,9 @@
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                             <div class="d-flex justify-content-start align-items-center">
-                                <ul>
+                                <ul class="">
                                     <?php foreach(range(0,6) as $i) : ?>
-                                        <li>item1</li>
+                                        <li><a href="">item1</a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </div>                 
@@ -70,6 +70,23 @@
                     <?php endforeach; ?>
                 </div>
             </div><!--col-lg-9-->
+            <div class="col-12 d-flex justify-content-center align-items-center pt-lg-4 pt-2">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </section>
 </main>

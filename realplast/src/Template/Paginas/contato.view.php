@@ -2,10 +2,10 @@
     <section class="contato py-lg-4 py-2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-12 py-lg-0 py-2 pe-lg-4 pe-0">
+                <div class="col-lg-6 col-12 py-lg-0 py-2 pe-lg-4">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="flex-column titulo">
-                            <h2 class="">Entre em <span>Contato</span> conosco!</h2>
+                            <!--<h2 class="">Entre em <span>Contato</span> conosco!</h2>-->
                                 <div class="py-1">
                                     <p>Agradecemos seu interesse em entrar em contato consoco!</p>
                                     <p>Utilize o formulário, ou se preferir ligue-nos, teremos a satisfação de atendê-lo!</p>
@@ -32,7 +32,9 @@
                                         </li>
                                 </ul>
                             </div>
+                            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.282482951386!2d-51.19354538429744!3d-29.156346897498942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ebd4caa78dbd3%3A0xff7fe17ae4689837!2sRealplast%20Componentes%20Pl%C3%A1sticos!5e0!3m2!1spt-BR!2sbr!4v1678240247761!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
+                       
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 py-2 form">

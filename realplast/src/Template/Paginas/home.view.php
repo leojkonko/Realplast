@@ -15,7 +15,7 @@
                                 </div>
                                 <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
                                     <a href="<?= url('produtos') ?>">
-                                        <button class="btn btn-custom2">Saiba mais
+                                        <button class="btn btn-custom2"><span>Saiba mais</span>
                                             <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
                                             </svg>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="d-flex justify-content-start align-items-center">
                     <a href="<?= url('produtos') ?>">
-                        <button class="btn btn-custom2">Linha completa
+                        <button class="btn btn-custom2"><span>Linha completa</span>
                         <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
                         </svg>
@@ -161,14 +161,14 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-6 col-12 conteudo">
                 <div class="d-flex justify-content-start align-items-center">
-                    <h2>Corporativo</h2>
+                    <h2>Componentes</h2>
                 </div>
                 <div class="d-flex justify-content-start align-items-center">
-                    <p>Conheça a nossa linha completa de produtos para o setor corporativo</p>
+                    <p>Peças diversas para a construção de cadeiras de alta qualidade</p>
                 </div>
                 <div class="d-flex justify-content-start align-items-center">
                     <a href="<?= url('produtos') ?>">
-                        <button class="btn btn-custom2">Linha completa
+                        <button class="btn btn-custom2"><span>Linha completa</span>
                             <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 9L5 5L1 1" stroke="#253E4F" stroke-width="2"/>
                             </svg>
@@ -225,7 +225,7 @@
                 </div>
                 <div class="d-flex justify-content-start align-items-center">
                     <a href="<?= url('produtos') ?>">
-                        <button class="btn btn-custom2">Linha completa
+                        <button class="btn btn-custom2"><span>Linha completa</span>
                             <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 9L5 5L1 1" stroke="#253E4F" stroke-width="2"/>
                             </svg>
@@ -250,7 +250,8 @@
                         <p>Adquira produtos perfeitos para a sua necessidade</p>
                     </div>
                     <div class="d-flex justify-content-start align-items-center">
-                        <button class="btn btn-custom2" data-bs-toggle="modal" data-bs-target="#exampleModal">Personalize produtos
+                        <button class="btn btn-custom2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>Personalize produtos</span>
                         <svg width="22"  class="ms-0-50" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 9L5 5L1 1" stroke="#FF6A00" stroke-width="2"/>
                         </svg>
@@ -286,7 +287,7 @@
                                     </label>
                             </div>
                                 <div class="row">
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-12 ps-0 pe-lg-1 pe-0">
                                             <div class="textarea-wrapper">
                                                 <textarea  maxlength="100" class="form-control" id="myTextarea" name="" placeholder="Frase desejada"
                                                 cols="30" rows="10"></textarea>
@@ -312,7 +313,7 @@ Opção 3</option>
                                                 </select>
                                             </div>
                                         </div>
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-12 pe-0 ps-lg-1 ps-0">
                                         <div class="custom-file-input">
                                             <label for="file-input"></label>
                                             <input type="file" id="file-input" name="file">

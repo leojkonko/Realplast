@@ -62,17 +62,17 @@
             & button {
                 background: linear-gradient(90deg, #FF3C01 0%, #FF6A00 100%);
                 font-weight: 600;
-                font-size: 22px;
+                font-size: 18px;
                 line-height: 24px;
                 color: white;
-                padding: 30px 50px;
+                padding: 20px 50px;
                 border-radius: 3px 3px 0px 0px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
 
                 @media (min-width:992px)and(max-width:1550px) {
-                    padding: 30px 15px;
+                    padding: 20px 15px;
                     width: 100%;
                 }
 
