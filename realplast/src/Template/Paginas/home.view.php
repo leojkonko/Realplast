@@ -101,7 +101,7 @@
     <section class="areas d-block">
         <div class="row">
             <div class="col-lg-8 d-flex justify-content-start align-items-center img">
-                <img src="<?= asset('images/backgrounds/cadeira.svg') ?>" alt="">
+                <img src="<?= asset('images/backgrounds/cadeira.png') ?>" alt="">
             </div>
             <div class="col-lg-4 col-12 conteudo">
                 <div class="d-flex justify-content-start align-items-center">
@@ -177,7 +177,7 @@
                 </div>
             </div>
             <div class="col-lg-4 d-flex justify-content-start align-items-center img">
-                <img src="<?= asset('images/backgrounds/componentes.svg') ?>" alt="">
+                <img src="<?= asset('images/backgrounds/componentes.png') ?>" alt="">
             </div>
         </div>
     </section>
@@ -234,7 +234,7 @@
                 </div>
             </div>
             <div class="col-lg-4 d-flex justify-content-start align-items-center img">
-                <img src="<?= asset('images/backgrounds/componentes.svg') ?>" alt="">
+                <img src="<?= asset('images/backgrounds/componentes.png') ?>" alt="">
             </div>
         </div>
             <div class="em-breve"></div>
@@ -259,7 +259,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-start align-items-center img">
-                    <img src="<?= asset('images/backgrounds/cadeiras.svg') ?>" alt="">
+                    <img src="<?= asset('images/backgrounds/cadeiras.png') ?>" alt="">
                 </div>
             </div>
                 <!-- Modal -->
