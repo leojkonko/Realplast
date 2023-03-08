@@ -89,9 +89,6 @@
                     </div>
                 </div>
             </div><!--col-lg-9-->
-            <div class="col-12 d-flex justify-content-center align-items-center pt-lg-4 pt-2">
-                
-            </div>
         </div>
     </section>
 </main>
