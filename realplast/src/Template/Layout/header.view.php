@@ -199,7 +199,7 @@
     <?php /* Remover essa primeira condicional */ ?>
         <?php if ($pagina_atual === "home") : ?>
             <?= $header ?>
-            <div class="header-wrapper">
+           <!-- <div class="header-wrapper">
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class="breadcrumb-wrapper">
                         <div class="container">
@@ -218,7 +218,7 @@
                         </div>
                     </section>
                 <?php endif; ?>
-            </div>
+            </div>-->
         <?php endif; ?>
 
         <?php if ($pagina_atual === "empresa") : ?>

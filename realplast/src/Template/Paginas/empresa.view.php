@@ -29,7 +29,7 @@
 
                 <div class="col-lg-6 conteudo d-flex align-items-center py-2">
                     <div class="row">
-                        <div class="col-12 p px-xl-4 px-lg-2 ">
+                        <div class="col-12 p px-2">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nostrum velit nemo ea, ut, porro,
                                 ducimus cupiditate adipisci at nam assumenda vel! Accusamus earum deserunt, necessitatibus ullam enim
                                 cum quas!</p>
